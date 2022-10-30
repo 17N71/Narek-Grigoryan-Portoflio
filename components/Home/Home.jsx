@@ -13,9 +13,9 @@ const Home = ({data}) => {
                   dark:after:bg-stone-400 after:bg-stone-600">{data.title}</h3>
             <article>
                 <p className="xl:leading-[3rem] tracking-wide xl:text-3xl md:text-2xl text-stone-700 dark:text-white/70">{data.paragraph[lang][0]}
-                    <a className="px-1 outline-none tracking-wider hover:text-[#0ea5e9]  font-black transition-color duration-300 " href="https://tailwindcss.com" rel="noopener noreferrer nofollow">{data.paragraph[lang][1]}</a>
-                    <a className="px-1 outline-none tracking-wider hover:text-black  font-black transition-color duration-300 hover:bg-white rounded-md" href="https://nextjs.org/" rel="noopener noreferrer nofollow">{data.paragraph[lang][2]}</a>
-                    <a className="px-1 outline-none tracking-wider hover:text-[#bf4080] font-extrabold transition-color duration-300 " href="https://sass-lang.com/" rel="noopener noreferrer nofollow">{data.paragraph[lang][3]}</a>
+                    <a target="_blank" className="px-1 outline-none tracking-wider hover:text-[#0ea5e9]  font-black transition-color duration-300 " href="https://tailwindcss.com" rel="noopener noreferrer nofollow">{data.paragraph[lang][1]}</a>
+                    <a target="_blank" className="px-1 outline-none tracking-wider hover:text-black  font-black transition-color duration-300 hover:bg-white rounded-md" href="https://nextjs.org/" rel="noopener noreferrer nofollow">{data.paragraph[lang][2]}</a>
+                    <a target="_blank" className="px-1 outline-none tracking-wider hover:text-[#bf4080] font-extrabold transition-color duration-300 " href="https://sass-lang.com/" rel="noopener noreferrer nofollow">{data.paragraph[lang][3]}</a>
                     {data.paragraph[lang][4]}
                 </p>
 

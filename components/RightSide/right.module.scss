@@ -1,0 +1,56 @@
+.right{
+  flex: 1 1 32%;
+  @apply duration-700 will-change-auto  flex flex-col items-center z-10    transition-all;
+}
+.grow{
+  flex: 1 1 45%;
+}
+.imageBorder{
+  @apply w-full
+  bg-transparent
+  border
+  dark:border-white
+  border-stone-900
+  border-opacity-20
+  absolute h-[130%]
+  transition-all
+  duration-500
+  py-2
+  -top-5
+  left-0 -z-10
+  before:w-[110%]
+  before:bg-transparent
+  before:border
+  dark:before:border-white
+  before:border-stone-900
+  before:border-opacity-20
+  before:h-[90%]
+  before:top-[50%]
+  before:transform
+  before:-translate-y-[50%]
+  before:absolute
+  before:-left-5 ;
+  &.scrolled{
+    @apply h-[120%];
+  }
+}
+.body{
+  @apply ml-24 mt-16;
+}
+.nav{
+  @apply
+  fixed
+  h-full
+  top-0
+  py-32
+  items-start
+  justify-between
+  flex px-20
+  -right-[100%] transition-all duration-700 w-[50%]
+  dark:bg-[#181715]
+  bg-white
+  ;
+  &.openmenu{
+    @apply right-0 z-[50];
+  }
+}

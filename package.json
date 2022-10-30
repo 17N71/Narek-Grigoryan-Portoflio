@@ -9,12 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "^13.0.0",
+    "react": "^18.2.0",
+    "react-country-flag": "^3.0.2",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-scroll": "^1.8.8",
+    "react-typed": "^1.2.0",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "eslint": "8.26.0",
-    "eslint-config-next": "13.0.0"
+    "eslint-config-next": "^13.0.0",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1"
+  },
+  "author": {
+    "email": "narek07012020@gmail.com",
+    "name": "Narek",
+    "url": "https://github.com/17N71"
   }
 }

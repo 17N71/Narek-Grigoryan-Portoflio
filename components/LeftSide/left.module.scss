@@ -1,0 +1,18 @@
+.left{
+  flex:1 1 80%;
+
+  @apply  px-[4%] pt-[100px]  border-r border-stone-900 dark:border-white border-opacity-20
+}
+.small{
+  flex: 1 1 20%;
+}
+.backdrop{
+@apply fixed top-0 -left-[100%] w-full  z-10  h-full bg-stone-900/70 cursor-pointer transition-all duration-[1.5s]   ;
+&.menuopened{
+  @apply -left-[45%]
+}
+
+}
+.content{
+  @apply h-full flex  flex-col
+}

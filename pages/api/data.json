@@ -81,87 +81,87 @@
       }
     },
     "left": {
-
-      "about": {
-        "heading": {
-          "hy": "Իմ մասին",
-          "en": "About"
-        },
-        "title": {
-          "hy":"Կենսագրություն",
-          "en":"Biography"
-        },
-        "paragraph": {
-          "en": [
-            "I'm Front-end Developer. I'm from Yerevan. I code and create web pages. It's my first official portfolio. I studied programming at",
-            " \" STIMULUS OF THOUGHT \" ",
-            "NGO. I like working with new people. New people are new experiences. To create this page I used",
-            " TailwindCSS, ",
-            "Next.js, ",
-            "Sass ",
-            "and etc. I'm glad to see you on my page, and I'm sure you'll like it, below you will see my works. "
-          ],
-          "hy": [
-            "Ես Front-end Ծրագրավորող եմ: Ես Երևանից եմ։ Ծրագրավորում եմ և ստեղծում վեբ էջեր։ Սա իմ առաջին պաշտոնական պորտֆոլիոն է: Ծրագրավորում սովորել եմ Մտքի Զարկ",
-            " STIMULUS OF THOUGHT ",
-            "հասարակական կազմակերպությունում: Ինձ դուր է գալիս աշխատել նոր մարդկանց հետ: Նոր մարդիկ նոր ծանոթություններ : Այս էջը ստեղծելու համար ես օգտագործել եմ",
-            "TailwindCSS, ",
-            "Next.js, ",
-            "Sass ",
-            "և այլն: Ուրախ եմ ձեզ տեսնել իմ էջում, և վստահ եմ, որ այն ձեզ դուր կգա ստորև դուք կտեսնեք իմ աշխատանքներից։"
-          ]
-        },
-        "table":{
-          "name":{
-           "en":{
-            "key":"Name",
-            "value":"Narek Grigoryan"
-           },
-           "hy":{
-            "key":"Անուն",
-            "value":"Նարեկ Գրիգորյան"
-           }
-          },
-          "age":{
-            "en":{
-              "key":"Age"
-            },
-            "hy":{
-              "key":"Տարիք"
-            }
-          },
-          "address":{
-            "en":{
-              "key":"Address",
-              "value":"Armenia, Yerevan"
-            },
-            "hy":{
-              "key":"Հասցե",
-              "value":"Հայաստան, Երևան"
-            }
-
-          },
-          "phone":{
-            "hy":{"key":"Հեռախոսահամար"},
-            "en":{"key":"Phone"}
-          }
-        }
-      } ,
-      "home": {
-        "heading": {
-          "hy": "Ներածություն",
-          "en": "Introduction"
+        "home":{
+          "heading": {
+            "hy": "Ներածություն",
+            "en": "Introduction"
         },
         "title": "Front-End Developer",
         "paragraph": {
           "en":  
-            "I develop web pages of various sizes and styles, nice to see you on my site"
-          ,
+            "I develop web pages of various sizes and styles, nice to see you on my site"       ,
           "hy": 
             "Ես մշակում եմ տարբեր չափերի և ոճերի վեբ էջեր, ուրախ եմ ձեզ տեսնել իմ կայքում"
-          
         }
-      }
+        },
+        "about":{
+          "heading": {
+            "hy": "Իմ մասին",
+            "en": "About"
+          },
+          "title": {
+            "hy":"Կենսագրություն",
+            "en":"Biography"
+          },
+          "paragraph": {
+            "en": [
+              "I'm Front-end Developer. I'm from Yerevan. I code and create web pages. It's my first official portfolio. I studied programming at",
+              " \" STIMULUS OF THOUGHT \" ",
+              "NGO. I like working with new people. New people are new experiences. To create this page I used",
+              " TailwindCSS, ",
+              "Next.js, ",
+              "Sass ",
+              "and etc. I'm glad to see you on my page, and I'm sure you'll like it, below you will see my works. "
+            ],
+            "hy": [
+              "Ես Front-end Ծրագրավորող եմ: Ես Երևանից եմ։ Ծրագրավորում եմ և ստեղծում վեբ էջեր։ Սա իմ առաջին պաշտոնական պորտֆոլիոն է: Ծրագրավորում սովորել եմ Մտքի Զարկ",
+              " STIMULUS OF THOUGHT ",
+              "հասարակական կազմակերպությունում: Ինձ դուր է գալիս աշխատել նոր մարդկանց հետ: Նոր մարդիկ նոր ծանոթություններ : Այս էջը ստեղծելու համար ես օգտագործել եմ",
+              "TailwindCSS, ",
+              "Next.js, ",
+              "Sass ",
+              "և այլն: Ուրախ եմ ձեզ տեսնել իմ էջում, և վստահ եմ, որ այն ձեզ դուր կգա ստորև դուք կտեսնեք իմ աշխատանքներից։"
+            ]
+          },
+          "table":{
+            "name":{
+             "en":{
+              "key":"Name",
+              "value":"Narek Grigoryan"
+             },
+             "hy":{
+              "key":"Անուն",
+              "value":"Նարեկ Գրիգորյան"
+             }
+            },
+            "age":{
+              "en":{
+                "key":"Age"
+              },
+              "hy":{
+                "key":"Տարիք"
+              }
+            },
+            "address":{
+              "en":{
+                "key":"Address",
+                "value":"Armenia, Yerevan"
+              },
+              "hy":{
+                "key":"Հասցե",
+                "value":"Հայաստան, Երևան"
+              }
+        
+            },
+            "phone":{
+              "hy":{"key":"Հեռախոսահամար"},
+              "en":{"key":"Phone"}
+            }
+          }
+        }
     }
-  }
+    }
 }
+
+
+

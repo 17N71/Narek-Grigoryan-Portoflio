@@ -176,17 +176,12 @@ export default function Page({ data }) {
           <span className="cursor-background" />
         </span>
         <main className={`${main.main}`}>
+          <Media query="(min-width: 1041px)">
+            {(matches) => (matches ? "" : <TopSide />)}
+          </Media>
           <LeftSide />
           <Media query="(min-width: 1041px)">
-            {(matches) =>
-              matches ? (
-                <RightSide />
-              ) : (
-                <>
-                  <TopSide />
-                </>
-              )
-            }
+            {(matches) => (matches ? <RightSide /> : "")}
           </Media>
         </main>
       </dataContext.Provider>

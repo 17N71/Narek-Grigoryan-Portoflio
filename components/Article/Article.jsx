@@ -9,7 +9,7 @@ const Article = ({title,par,heading}) => {
     <h3 className='text-4xl   uppercase text-[#987750] mb-5'>{heading[lang]}</h3>
     <h2 className='text-5xl ss:text-4xl sm:text-5xl xl:text-6xl mb-12 mt-6 inline-block  relative
           z-[1] after:absolute
-                after:-bottom-7 after:left-0 after:w-[10%] after:h-1 after:z-[1]
+                after:-bottom-7 after:left-0 after:w-[20%] after:h-1 after:z-[1]
                 dark:after:bg-stone-400 after:bg-stone-600'>{title[lang]}</h2>
   <p className="xl:leading-[3rem] tracking-wide xl:text-3xl text-xl md:text-2xl device:pr-24 text-stone-700 dark:text-white/70">
     {par[lang][0]}

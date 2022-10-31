@@ -1,7 +1,11 @@
 import React from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
+import { dataContext } from '../../pages'
+import { useContext } from 'react';
 
-const OpenMenuButton = ({closeMenu}) => {
+const OpenMenuButton = () => {
+  const {closeMenu} = useContext(dataContext)
+
   return (
     <button type="button"
     onClick={closeMenu}

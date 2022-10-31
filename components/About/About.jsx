@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Table from '../Table/Table';
-import { dataContext } from './../../pages/index';
 import Article from './../Article/Article';
+import { dataContext } from './../../pages/index';
 
 const About = () => {
   const {data,lang} = useContext(dataContext)

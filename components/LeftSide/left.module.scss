@@ -1,7 +1,7 @@
 .left{
   flex:1 1 80%;
 
-  @apply  px-[4%] pt-[100px]  border-r border-stone-900 dark:border-white border-opacity-20
+  @apply  px-[4%] pt-[100px] device:border-r border-stone-900 dark:border-white border-opacity-20
 }
 .small{
   flex: 1 1 20%;

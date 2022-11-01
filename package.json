@@ -16,6 +16,7 @@
     "react-icons": "^4.6.0",
     "react-media": "^1.10.0",
     "react-scroll": "^1.8.8",
+    "react-transition-group": "^4.4.5",
     "react-typed": "^1.2.0",
     "sass": "^1.55.0"
   },

@@ -117,9 +117,9 @@
               "Ես Front-end Ծրագրավորող եմ: Ես Երևանից եմ։ Ծրագրավորում եմ և ստեղծում վեբ էջեր։ Սա իմ առաջին պաշտոնական պորտֆոլիոն է: Ծրագրավորում սովորել եմ Մտքի Զարկ",
               " STIMULUS OF THOUGHT ",
               "հասարակական կազմակերպությունում: Ինձ դուր է գալիս աշխատել նոր մարդկանց հետ: Նոր մարդիկ նոր ծանոթություններ : Այս էջը ստեղծելու համար ես օգտագործել եմ",
-              "TailwindCSS, ",
-              "Next.js, ",
-              "Sass ",
+              " TailwindCSS, ",
+              " Next.js, ",
+              " Sass ",
               "և այլն: Ուրախ եմ ձեզ տեսնել իմ էջում, և վստահ եմ, որ այն ձեզ դուր կգա ստորև դուք կտեսնեք իմ աշխատանքներից։"
             ]
           },
@@ -156,11 +156,156 @@
             "phone":{
               "hy":{"key":"Հեռախոսահամար"},
               "en":{"key":"Phone"}
+        }
+       },
+          "tabs": {
+            "list": {
+              "en": [
+                {
+                  "id": 1,
+                  "title": "Education",
+                  "type": "education"
+                },
+                {
+                  "id": 2,
+                  "title": "Experience",
+                  "type": "experience"
+                },{
+                  "id": 3,
+                  "title": "Skills",
+                  "type": "skill"
+                }
+              ],
+              "hy": [
+                {
+                  "id": 1,
+                  "title": "Կրթություն",
+                  "type": "education"
+                },
+                {
+                  "id": 2,
+                  "title": "Փորձ",
+                  "type": "experience"
+                },
+                {
+                  "id": 3,
+                  "title": "Հմտություններ",
+                  "type": "skill"
+                }
+              ]
+            },
+            "body": {
+              "skill": {
+                "en": [
+                  {
+                    "id": 1,
+                    "title":"HTML and CSS [SCSS]",
+                    "percent": 95
+                  },     {
+                    "id": 2,
+                    "title":"Pure JavaScript",
+                    "percent": 70
+                  },     {
+                    "id": 3,
+                    "title":"React.js + Next.js",
+                    "percent": 65
+                  }
+                ],
+                "hy": [
+                  {
+                    "id": 1,
+                    "title":"HTML և CSS [SCSS]",
+                    "percent": 95
+                  },
+                  {
+                    "id":2,
+                    "title":"Մաքուր JavaScript",
+                    "percent": 70
+                  },
+                  {
+                    "id": 3,
+                    "title":"React.js + Next.js",
+                    "percent": 65
+                  }
+                ]
+              },
+              "experience": {
+                "en": [
+                  {
+                    "id": 1,
+                    "title": "Webex LLC",
+                    "subtitle": "Trainee",
+                    "date": "(2022 august 1 - 2022 september 1)",
+                    "desc":"while studying at «STIMULUS THOUGHT», with their help, I temporarily got a job at «Webex LLC»  as an intern for a month during the internship, got a little experience in a team"
+                  }
+                ],
+                "hy": [
+                  {
+                    "id": 1,
+                    "title": "Webex ՍՊԸ",
+                    "subtitle": "Պրակտիկանտ",
+                    "date": "(2022թ․ օգոստսի 1-ից - 2022թ-ի սեպտեմբերի 1-ը)",
+                    "desc": "սովորելով «STIMULUS THOUGHT»-ում, իրենց օգնությամբ ժամանակավորապես աշխատանքի ընդունվեցի «Webex ՍՊԸ»-ում որպես պրակտիկանտ՝ պրակտիկան տեվեց մեկ ամիս, որից ես ստացա մի փոքր թիմում աշխատելու փորձ ."
+                  }
+                ]
+              },
+              "education": {
+                "en": [  {
+                  "id": 1,
+                  "title": "education title",
+                  "subtitle": "education subtitle",
+                  "date": "education date",
+                  "desc": "education descrition"
+                },    {
+                  "id": 2,
+                  "title": "education title 2",
+                  "subtitle": "education subtitle 2",
+                  "date": "education date 2 ",
+                  "desc": "education descrition 2"
+                },    {
+                  "id": 3,
+                  "title": "",
+                  "subtitle": "",
+                  "date": "",
+                  "desc": ""
+                } ,   {
+                  "id": 4,
+                  "title": "",
+                  "subtitle": "",
+                  "date": "",
+                  "desc": ""
+                }],
+                "hy": [ {
+                  "id": 1,
+                  "title": "Կրթության վերնագիր",
+                  "subtitle": "Կրթության անվամում",
+                  "date": "Կրթության ժամամակ",
+                  "desc": "Կրթության ինֆո"
+                },    {
+                  "id": 2,
+                  "title": "",
+                  "subtitle": "",
+                  "date": "",
+                  "desc": ""
+                },    {
+                  "id": 3,
+                  "title": "",
+                  "subtitle": "",
+                  "date": "",
+                  "desc": ""
+                } ,   {
+                  "id": 4,
+                  "title": "",
+                  "subtitle": "",
+                  "date": "",
+                  "desc": ""
+                }]
+              }
             }
           }
-        }
+     }
     }
-    }
+  }
 }
 
 

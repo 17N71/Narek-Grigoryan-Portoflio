@@ -16,7 +16,7 @@ const Table = ({table}) => {
 
   const {lang} = useContext(dataContext)
   return (
-    <div className='flex  justify-between   md:justify-between  flex-wrap gap-10 '>
+    <div className='flex  justify-between   md:justify-between mt-10  flex-wrap gap-10 '>
       <div className='text-xl'>
         <ul className='flex flex-col gap-4'>
             <li className=' text-gray-400'>{table["name"][lang]["key"]}</li>

@@ -55,7 +55,7 @@ function Portfolios({allPortfolios}) {
 
          {allPortfolios.map(({title,id,alt})=>(
              <SplideSlide key={id}>
-                 <Link target={"_blank"} href={`/portfolio/${id}`} className={" cursor-ew-resize"}>
+                 <Link  href={`/portfolio/${id}`} className={" cursor-ew-resize"}>
                      <Image style={{objectFit:"cover",width:"100%",height:"100%"}} className={"pointer-events-none cursor-ew-resize"} priority  src={Portfolios[id-1]} alt={alt} title={title}  />
                  </Link>
              </SplideSlide>

@@ -252,53 +252,53 @@
               "education": {
                 "en": [  {
                   "id": 1,
-                  "title": "education title",
-                  "subtitle": "education subtitle",
-                  "date": "education date",
-                  "desc": "education descrition"
+                  "title": "Sh. Rustaveli №23",
+                  "subtitle": "secondary education from 5th grade to 9th grade",
+                  "date": "(2011 - 2016)",
+                  "desc": "secondary education from 1th grade to 5th grade i received at school V. Zatikyan №90 (2006-2011) "
                 },    {
                   "id": 2,
-                  "title": "education title 2",
-                  "subtitle": "education subtitle 2",
-                  "date": "education date 2 ",
-                  "desc": "education descrition 2"
+                  "title": "FES House",
+                  "subtitle": "Front-end programming",
+                  "date": "(2014-2015)",
+                  "desc": "during my studies I got knowledge about html, css, js and jquery"
                 },    {
                   "id": 3,
-                  "title": "",
-                  "subtitle": "",
-                  "date": "",
-                  "desc": ""
+                  "title": "T.Shevchenko №42",
+                  "subtitle": "High school",
+                  "date": "(2017-2020)",
+                  "desc": "I joined the army after high school. During the service, I was injured due to the war and was released from service for 3 years"
                 } ,   {
                   "id": 4,
-                  "title": "",
-                  "subtitle": "",
-                  "date": "",
-                  "desc": ""
+                  "title": "«STIMULUS THOUGHT» NGO",
+                  "subtitle": "Front-end advanced education ",
+                  "date": "(2021 november - 2022 november)",
+                  "desc": "I learned js, React.js, jquery, [python basics] and most importantly teamwork"
                 }],
                 "hy": [ {
                   "id": 1,
-                  "title": "Կրթության վերնագիր",
-                  "subtitle": "Կրթության անվամում",
-                  "date": "Կրթության ժամամակ",
-                  "desc": "Կրթության ինֆո"
+                  "title": "Շ․Ռուսթավելի №23",
+                  "subtitle": "Միջնակարգ կրություն 5-ից մինչև 9-րդ դասարաններ",
+                  "date": "(2011 - 2016)",
+                  "desc": "Միջնակարգ կրթությունս 1-ից մինչև 5-րդ դասարաններ ստացել եմ Վ․Զատիկյանի №90 դպրոցում"
                 },    {
                   "id": 2,
-                  "title": "",
-                  "subtitle": "",
-                  "date": "",
-                  "desc": ""
+                  "title":"FES House",
+                  "subtitle":  "Front-end ծրագրավորում",
+                  "date": "(2014-2015)",
+                  "desc": "ուսման ընթացքում ստացել եմ html, css, js և jquery -ին վերաբերյալ գիտելիքներ"
                 },    {
                   "id": 3,
-                  "title": "",
-                  "subtitle": "",
-                  "date": "",
-                  "desc": ""
+                  "title": "Տ․Շեվչենկո",
+                  "subtitle": "Ավագ դպրոց",
+                  "date": "(2017-2020)",
+                  "desc": "Ավագ դպրոցից հետո  գնացել եմ բանակ,ծառայությանց ընթացքում պատերազմի պատճառով ստացել եմ վնասվածք և ազատվել եմ ծառայությունից 3 տարի ժամկետով"
                 } ,   {
                   "id": 4,
-                  "title": "",
-                  "subtitle": "",
-                  "date": "",
-                  "desc": ""
+                  "title": "«STIMULUS THOUGHT» ՀԿ",
+                  "subtitle": "Front-end խորացված կրթություն",
+                  "date": "(2021 նոյեմբեր - 2022 նոյեմբեր)",
+                  "desc": "Ես ավելի խորացված սովորել եմ js, React.js, jquery, [python-ի հիմունքները] և կարևորը աշխատանք թիմում\n"
                 }]
               }
             }

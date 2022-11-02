@@ -21,16 +21,7 @@ module.exports = {
         "extra-loose": "2.5",
         12: "3rem",
       },
-      keyframes: {
-        rotated: {
-          '0%, 100%': { transform: 'translateX(0px) translateY(0px)'},
-          '50%': { transform: 'translateX(4px) translateY(-4px)'},
-        }
 
-      },
-      animation: {
-        rotated: 'rotated 0.6s ease-in-out',
-      }
     },
   },
   plugins: [],

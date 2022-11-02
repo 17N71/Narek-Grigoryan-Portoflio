@@ -29,19 +29,18 @@ const About = () => {
     return (
     <div name="about" className='flex flex-col gap-2 min-h-screen'>
         <Article par={par} title={title} heading={heading} />
-        <Tab twdClasses={"mt-10 mb-20 transition-all duration-300"}>
-        <TabList>
-            {tabList[lang].map(({id, title, type}) => (
-                <TabItem key={id} ChangeTab={ChangeTab} isActiveTab={tabIndex === id} changeId={id}
-                  type={type}>{title}</TabItem>
-            ))}
-        </TabList>
-        <TabBody tabIsChanged={tabIsChanged}>
-            <TabBodyItem tabIsChanged={tabIsChanged} tabData={tabBody[type][lang]}/>
-        </TabBody>
-    </Tab>
         <Table table={table} />
-
+        <Tab twdClasses={"mt-32 mb-20 transition-all duration-300"}>
+            <TabList>
+                {tabList[lang].map(({id, title, type}) => (
+                    <TabItem key={id} ChangeTab={ChangeTab} isActiveTab={tabIndex === id} changeId={id}
+                             type={type}>{title}</TabItem>
+                ))}
+            </TabList>
+            <TabBody tabIsChanged={tabIsChanged}>
+                <TabBodyItem tabIsChanged={tabIsChanged} tabData={tabBody[type][lang]}/>
+            </TabBody>
+        </Tab>
     </div>
   )
 }

@@ -7,21 +7,38 @@
 .item{
   @apply flex items-center  cursor-pointer text-2xl justify-center py-2 px-3 relative uppercase
   border-b transition-all duration-200
-
-  after:absolute after:-right-[30%] after:top-[50%] after:transform after:translate-y-[-50%]
-  dark:after:bg-[#906d49] after:bg-gray-400 after:w-[20%] after:h-[2px]
-  last:after:bg-opacity-0 after:hidden sm:after:inline;
+   sm:after:inline;
+  &:nth-child(2){
+    @apply dark:after:bg-[#906d49] sm:after:inline sm:before:inline after:hidden before:hidden after:bg-gray-400 after:w-[50px] after:h-[2px] after:absolute dark:before:bg-[#906d49] before:bg-gray-400 before:w-[50px] before:h-[2px] before:absolute ;
+    &::after{right: calc(-100% + 75px);
+  }
+    &::before{right: calc(100% + 25px);
+    }
+  }
 }
 .body{
-  @apply flex w-full flex-col gap-2  min-h-[200px] px-3 py-2 w-full opacity-100 w-full transform transition-all rotate-0 duration-200
+  @apply flex w-full flex-col gap-2  min-h-[200px] px-3 py-2 w-full opacity-100 w-full transform
+  transition-all rotate-0 duration-200
 }
 .bodyItem{
-  @apply  opacity-0 w-full transform transition-all duration-200 sm:px-10 sm:py-10  py-5 px-5 relative border-black border bg-white dark:border-transparent dark:border dark:bg-[#181715]
+  @apply  opacity-0 w-full transform transition-all  duration-200 sm:px-10 sm:py-10  py-5 px-5 relative
+  border-black border bg-white dark:border-transparent dark:border dark:bg-[#181715]
   before:w-[3px] before:absolute before:h-[40px]
-  before:left-0 before:top-[50%] before:transform before:translate-y-[-50%] before:bg-gray-500 dark:before:bg-gray-300/60
+  before:left-0 before:top-[50%] before:transform before:translate-y-[-50%] before:bg-gray-500 dark:before:bg-gray-300/60;
+  &:nth-child(2n){
+    @apply -translate-x-10;
+    &.actived{
+      @apply opacity-100  translate-x-0
+    }
+  }  &:nth-child(2n+1){
+    @apply translate-x-10;
+    &.actived{
+      @apply opacity-100  translate-x-0
+    }
+  }
 }
 .actived{
-  @apply opacity-100  translate-x-0 animate-[rotated_0.6s_ease-in-out]
+  @apply opacity-100  translate-x-0
 }
 .heading{
   @apply flex  items-start  justify-between

@@ -1,7 +1,7 @@
 import "./../styles/style.scss";
 import '@splidejs/react-splide/css/core';
 import "../styles/globals.css";
-import React, {useCallback} from "react";
+import React from "react";
 
 function MyApp({ Component, pageProps }) {
     const [activeMouse, setActiveMouse] = React.useState(false);

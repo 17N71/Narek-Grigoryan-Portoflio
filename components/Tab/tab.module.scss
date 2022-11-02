@@ -59,8 +59,8 @@
   @apply  flex dark:text-gray-300/70 text-gray-500 text-lg mb-2 items-center
 }
 .range{
-  @apply w-full bg-[#906d49] dark:bg-[#333333] h-[3px] relative
+  @apply w-full bg-[#906d49] dark:bg-[#333333] h-[4px] relative
 }
 .rangeInner{
-  @apply h-[3px] bg-black dark:bg-[#906d49] transition-all duration-[1.5s]
+  @apply h-[4px] bg-black dark:bg-[#906d49] transition-all duration-[1.5s]
 }

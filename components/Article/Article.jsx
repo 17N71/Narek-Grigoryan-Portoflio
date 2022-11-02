@@ -11,7 +11,12 @@ const Article = ({title,par,heading}) => {
           z-[1] after:absolute
                 after:-bottom-7 after:left-0 after:w-[20%] after:h-1 after:z-[1]
                 dark:after:bg-stone-400 after:bg-stone-600'>{title[lang]}</h2>
-  <p className="xl:leading-[3rem] tracking-wide xl:text-3xl text-xl md:text-2xl device:pr-24 text-stone-700 dark:text-white/70">
+  <p className="xl:leading-[3rem]
+  tracking-wide
+  text-justify
+  device:text-left
+  xl:text-3xl text-xl md:text-2xl
+   device:pr-24 text-stone-700 dark:text-white/70">
     {par[lang][0]}
         <a target="_blank"
       className="px-1 outline-none tracking-wider hover:text-[#796fae]

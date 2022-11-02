@@ -43,24 +43,20 @@ function Portfolios({allPortfolios}) {
     }
     return (
         <div className={portfolios.portfolios} name={"portfolio"}>
-
             <h3 className='text-4xl   uppercase text-[#987750] mb-5'>{data.data.left.portfolios.title[lang]}</h3>
             <h2 className='text-5xl ss:text-4xl sm:text-5xl xl:text-6xl mb-12 mt-6 inline-block  relative
-          z-[1] after:absolute
+                z-[1] after:absolute
                 after:-bottom-7 after:left-0 after:w-[20%] after:h-1 after:z-[1]
                 dark:after:bg-stone-400 after:bg-stone-600'>{data.data.left.portfolios.subtitle[lang]}</h2>
-
-    <Splide options={options} tag="section"  className={"my-5"} aria-label="Portfolio Slider">
-
-
-         {allPortfolios.map(({title,id,alt})=>(
-             <SplideSlide key={id}>
+             <Splide options={options} tag="section"  className={"my-5"} aria-label="Portfolio Slider">
+                    {allPortfolios.map(({title,id,alt})=>(
+                 <SplideSlide key={id}>
                  <Link  href={`/portfolio/${id}`} className={" cursor-ew-resize"}>
                      <Image style={{objectFit:"cover",width:"100%",height:"100%"}} className={"pointer-events-none cursor-ew-resize"} priority  src={Portfolios[id-1]} alt={alt} title={title}  />
                  </Link>
              </SplideSlide>
-        ))}
-    </Splide>
+                    ))}
+             </Splide>
         </div>
     );
 }

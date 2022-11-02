@@ -144,7 +144,7 @@ export default function Page({ data }) {
         <meta name="theme-color" content="dark light" />
         <meta name="title" content={MetaTitle[lang]} />
         <meta property="og:type" content="portfolio" />
-        {/* <meta name="og:image" content={me}  /> */}
+         <meta name="og:image" content="https://narek-grigoryan-17n71.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fme.657b5715.jpg&w=640&q=100"  />
         <meta name="og:title" content={MetaTitle[lang]} />
         <meta name="description" content={MetaDescription[lang]} />
 

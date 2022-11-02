@@ -144,9 +144,17 @@ export default function Page({ data }) {
         <meta name="theme-color" content="dark light" />
         <meta name="title" content={MetaTitle[lang]} />
         <meta property="og:type" content="portfolio" />
-         <meta name="og:image" content="https://narek-grigoryan-17n71.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fme.657b5715.jpg&w=640&q=100"  />
+        <meta property="og:url" content="https://narek-grigoryan-17n71.vercel.app/" />
+        <meta property="fb:app_id" content="%d" />
+        <meta name="og:image" content="https://narek-grigoryan-17n71.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fme.657b5715.jpg&w=640&q=100"  />
+        <meta name="og:image:url" content="https://narek-grigoryan-17n71.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fme.657b5715.jpg&w=640&q=100"  />
+        <meta name="og:image:type" content="image/jpeg" />
+        <meta name="og:image:width" content="300" />
+        <meta name="og:image:height" content="260" />
         <meta name="og:title" content={MetaTitle[lang]} />
         <meta name="description" content={MetaDescription[lang]} />
+        <meta name="og:locale" content={"en_US"} />
+        <meta name="og:locale:alternate" content={"hy_AM"} />
 
         <meta name="og:description" content={MetaDescription[lang]} />
         <meta

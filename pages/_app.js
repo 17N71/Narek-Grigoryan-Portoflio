@@ -1,5 +1,6 @@
-import "../styles/globals.css";
 import "./../styles/style.scss";
+import '@splidejs/react-splide/css/core';
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (

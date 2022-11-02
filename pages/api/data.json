@@ -303,7 +303,39 @@
               }
             }
           }
-     }
+     },
+      "portfolios": {
+        "title": {
+          "en": "Portfolio",
+          "hy": "Պորտֆոլիո"
+        },
+        "subtitle": {
+          "en": "Works done",
+          "hy": "Կատարած աշխատանքներ"
+        },
+        "allPortfolios": [
+          {
+            "id": 1,
+            "alt": "Komitas",
+            "title": "Komitas"
+          },
+          {
+            "id": 2,
+            "alt": "Medley",
+            "title":"Medley"
+          },
+          {
+            "id": 3,
+            "alt": "MetaWave",
+            "title": "MetaWave"
+          },
+          {
+            "id": 4,
+            "alt": "Elastic",
+            "title": "Elastic"
+          }
+        ]
+      }
     }
   }
 }

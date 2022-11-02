@@ -19,17 +19,13 @@ body,
 ::-webkit-scrollbar-thumb{
    @apply w-[10px] bg-gray-500 dark:bg-stone-500 rounded-md;
  }
-.my-node-enter {
-    opacity: 0;
+.portfolios-arrows{
+    @apply flex items-center justify-end mx-2 my-3;
 }
-.my-node-enter-active {
-    opacity: 1;
-    transition: opacity 200ms;
+.portfolios-arrow-next {
+    @apply fill-[#cbb040] hover:hover:fill-[#baa010]  ;
 }
-.my-node-exit {
-    opacity: 1;
-}
-.my-node-exit-active {
-    opacity: 0;
-    transition: opacity 200ms;
+.portfolios-arrow-prev{
+    @apply transform rotate-180 fill-[#cbb040] hover:fill-[#baa010];
+
 }

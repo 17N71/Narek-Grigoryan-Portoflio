@@ -27,11 +27,11 @@
 .secondary-cursor {
   width: 40px;
   height: 40px;
-  transition: width 0.4s ease 0s,height 0.4s ease 0s;
+  transition: width 0.4s ease 0s, height 0.4s ease 0s;
   background-color: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 100%;
-  &.related{
+  &.related {
     width: 60px;
     height: 60px;
   }
@@ -171,4 +171,7 @@
   to {
     transform: translate(0px, -50%);
   }
+}
+svg {
+  @apply pointer-events-none;
 }

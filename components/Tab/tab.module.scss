@@ -1,66 +1,71 @@
-.tab{
+.tab {
   @apply flex flex-col gap-5;
 }
-.list{
+.list {
   @apply flex gap-4 sm:gap-24 flex-col sm:flex-row flex-wrap;
 }
-.item{
+.item {
   @apply flex items-center  cursor-pointer text-2xl justify-center py-2 px-3 relative uppercase
   border-b transition-all duration-200
    sm:after:inline;
-  &:nth-child(2){
-    @apply dark:after:bg-[#906d49] sm:after:inline sm:before:inline after:hidden before:hidden after:bg-gray-400 after:w-[50px] after:h-[2px] after:absolute dark:before:bg-[#906d49] before:bg-gray-400 before:w-[50px] before:h-[2px] before:absolute ;
-    &::after{right: calc(-100% + 75px);
-  }
-    &::before{right: calc(100% + 25px);
+  &:nth-child(2) {
+    @apply dark:after:bg-[#906d49] sm:after:inline sm:before:inline
+    after:hidden before:hidden after:bg-gray-400 after:w-[50px] after:h-[2px]
+    after:absolute dark:before:bg-[#906d49] before:bg-gray-400 before:w-[50px] before:h-[2px] before:absolute;
+    &::after {
+      right: calc(-100% + 75px);
+    }
+    &::before {
+      right: calc(100% + 25px);
     }
   }
 }
-.body{
+.body {
   @apply flex w-full flex-col gap-2  min-h-[200px] px-3 py-2 w-full opacity-100 w-full transform
-  transition-all rotate-0 duration-200
+  transition-all rotate-0 duration-200;
 }
-.bodyItem{
-  @apply  opacity-0 w-full transform transition-all  duration-200 sm:px-10 sm:py-10  py-5 px-5 relative
+.bodyItem {
+  @apply opacity-0 w-full transform transition-all  duration-200 sm:px-10 sm:py-10  py-5 px-5 relative
   border-black border bg-white dark:border-transparent dark:border dark:bg-[#181715]
   before:w-[3px] before:absolute before:h-[40px]
   before:left-0 before:top-[50%] before:transform before:translate-y-[-50%] before:bg-gray-500 dark:before:bg-gray-300/60;
-  &:nth-child(2n){
-    @apply -translate-x-10;
-    &.actived{
-      @apply opacity-100  translate-x-0
+  &:nth-child(2n) {
+    @apply md:-translate-x-10 md:translate-y-0;
+    &.actived {
+      @apply opacity-100  md:translate-y-0 md:translate-x-0 translate-y-0;
     }
-  }  &:nth-child(2n+1){
-    @apply translate-x-10;
-    &.actived{
-      @apply opacity-100  translate-x-0
+  }
+  &:nth-child(2n + 1) {
+    @apply md:translate-x-10 -translate-x-0;
+    &.actived {
+      @apply opacity-100  md:translate-x-0  translate-y-0;
     }
   }
 }
-.actived{
-  @apply opacity-100  translate-x-0
+.actived {
+  @apply opacity-100 md:translate-x-0 translate-y-0;
 }
-.heading{
-  @apply flex  items-start  justify-between
+.heading {
+  @apply flex items-start justify-between;
 }
-.date{
-  @apply text-sm sm:text-base text-gray-500 dark:text-gray-400 font-thin
+.date {
+  @apply text-sm sm:text-base text-gray-500 dark:text-gray-400 font-thin;
 }
-.title{
-  @apply text-lg sm:text-2xl mb-2 uppercase
+.title {
+  @apply text-lg sm:text-2xl mb-2 uppercase;
 }
-.subtitle{
-  @apply text-xl   sm:text-3xl mt-4
+.subtitle {
+  @apply text-xl sm:text-3xl mt-4;
 }
-.desc{
-  @apply text-lg text-gray-500 dark:text-gray-400 mt-4
+.desc {
+  @apply text-lg text-gray-500 dark:text-gray-400 mt-4;
 }
-.headingSkills{
-  @apply  flex dark:text-gray-300/70 text-gray-500 text-lg mb-2 items-center
+.headingSkills {
+  @apply flex dark:text-gray-300/70 text-gray-500 text-lg mb-2 items-center;
 }
-.range{
-  @apply w-full bg-[#906d49] dark:bg-[#333333] h-[4px] relative
+.range {
+  @apply w-full bg-[#906d49] dark:bg-[#333333] h-[4px] relative;
 }
-.rangeInner{
-  @apply h-[4px] bg-black dark:bg-[#906d49] transition-all duration-[1.5s]
+.rangeInner {
+  @apply h-[4px] bg-black dark:bg-[#906d49] transition-all duration-[1.5s];
 }

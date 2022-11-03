@@ -1,14 +1,14 @@
-import React from 'react'
-import TopSideNavigation from './TopSideNavigation/TopSideNavigation';
-import top from "./topside.module.scss"
-import Profile from './Profile/Profile';
+import React from "react";
+import TopSideNavigation from "./TopSideNavigation/TopSideNavigation";
+import top from "./topside.module.scss";
+import Profile from "./Profile/Profile";
 const TopSide = () => {
   return (
     <div className={top.topside}>
       <TopSideNavigation />
-      <Profile /> 
+      <Profile />
     </div>
-  )
-}
+  );
+};
 
-export default TopSide
+export default TopSide;

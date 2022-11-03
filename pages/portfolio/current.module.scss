@@ -1,0 +1,9 @@
+.main {
+  @apply flex;
+}
+.left {
+  @apply flex-[60%]  h-screen;
+}
+.right {
+  @apply flex-[40%]  h-screen border-l px-5 pt-2 border-gray-300/70;
+}

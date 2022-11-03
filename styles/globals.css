@@ -6,26 +6,25 @@
 *a,
 *::after,
 *::before {
-  font-family: "Jost",sans-serif;
+  font-family: "Jost", sans-serif;
   @apply m-0 p-0 box-border;
 }
 body,
 #__next {
   @apply bg-stone-100 dark:bg-[#1d1b19] text-black dark:text-white;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   @apply w-[10px] bg-gray-400 dark:bg-stone-600;
 }
-::-webkit-scrollbar-thumb{
-   @apply w-[10px] bg-gray-500 dark:bg-stone-500 rounded-md;
- }
-.portfolios-arrows{
-    @apply flex items-center justify-end mx-2 my-3;
+::-webkit-scrollbar-thumb {
+  @apply w-[10px] bg-gray-500 dark:bg-stone-500 rounded-md;
+}
+.portfolios-arrows {
+  @apply flex items-center justify-end mx-2 my-3;
 }
 .portfolios-arrow-next {
-    @apply fill-[#cbb040] hover:hover:fill-[#baa010]  ;
+  @apply fill-[#cbb040] hover:hover:fill-[#baa010];
 }
-.portfolios-arrow-prev{
-    @apply transform rotate-180 fill-[#cbb040] hover:fill-[#baa010];
-
+.portfolios-arrow-prev {
+  @apply transform rotate-180 fill-[#cbb040] hover:fill-[#baa010];
 }

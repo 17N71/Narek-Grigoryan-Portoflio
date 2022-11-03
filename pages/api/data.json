@@ -1,22 +1,8 @@
 {
   "data": {
-    "title":{
-      "hy":"Նարեկ Գրիգորյան Պորտֆոլիո",
-      "en":"Narek Grigoryan Portfolio"
-    },
-    "meta":{
-      "description":{
-        "en":"Hi my name is Narek i'm front-end developer and it's my portfolio created on Next.js and Tailwind",
-        "hy":"Ողջույն ես Նարեկ Գրիգորյան եմ, front-end ծրագրավորող սա իմ օֆիցյալ պորտֆոլիոն է ստեղծված է Next.js-ի, և Tailwind-ի օգնությամբ"
-      },
-      "title":{
-        "en":"Narek Grigoryan Portfolio created on Next.js and Tailwind",
-        "hy":"Նարեկ Գրիգորյան Պորտֆոլիո ստեղծված է Next.js-ի և Tailwind-ի օգնությամբ"
-      },
-      "author":{
-        "en":"Narek Grigoryan",
-        "hy":"Նարեկ Գրիգորյան"
-      }
+    "title": {
+      "hy": "Նարեկ Գրիգորյան Պորտֆոլիո",
+      "en": "Narek Grigoryan Portfolio"
     },
     "navigation": {
       "en": [
@@ -70,240 +56,244 @@
         "en": "Hi there! i am"
       },
       "profileTyped": {
-        "hy": [
-          "Նարեկ Գրիգորյանն եմ և",
-          "Front-End ծրագրավորող եմ"
-        ],
-        "en": [
-          "Narek Grigoryan and",
-          "Front-End developer"
-        ]
+        "hy": ["Նարեկ Գրիգորյանն եմ և", "Front-End ծրագրավորող եմ"],
+        "en": ["Narek Grigoryan and", "Front-End developer"]
       }
     },
     "left": {
-        "home":{
-          "heading": {
-            "hy": "Ներածություն",
-            "en": "Introduction"
+      "home": {
+        "heading": {
+          "hy": "Ներածություն",
+          "en": "Introduction"
         },
         "title": "Front-End Developer",
         "paragraph": {
-          "en":  
-            "I develop web pages of various sizes and styles, nice to see you on my site"       ,
-          "hy": 
-            "Ես մշակում եմ տարբեր չափերի և ոճերի վեբ էջեր, ուրախ եմ ձեզ տեսնել իմ կայքում"
+          "en": "I develop web pages of various sizes and styles, nice to see you on my site",
+          "hy": "Ես մշակում եմ տարբեր չափերի և ոճերի վեբ էջեր, ուրախ եմ ձեզ տեսնել իմ կայքում"
         }
+      },
+      "about": {
+        "heading": {
+          "hy": "Իմ մասին",
+          "en": "About"
         },
-        "about":{
-          "heading": {
-            "hy": "Իմ մասին",
-            "en": "About"
+        "title": {
+          "hy": "Կենսագրություն",
+          "en": "Biography"
+        },
+        "paragraph": {
+          "en": [
+            "I'm Front-end Developer. I'm from Yerevan. I code and create web pages. It's my first official portfolio. I studied programming at",
+            " \" STIMULUS OF THOUGHT \" ",
+            "NGO. I like working with new people. New people are new experiences. To create this page I used",
+            " TailwindCSS, ",
+            "Next.js, ",
+            "Sass ",
+            "and etc. I'm glad to see you on my page, and I'm sure you'll like it, below you will see my works. "
+          ],
+          "hy": [
+            "Ես Front-end Ծրագրավորող եմ: Ես Երևանից եմ։ Ծրագրավորում եմ և ստեղծում վեբ էջեր։ Սա իմ առաջին պաշտոնական պորտֆոլիոն է: Ծրագրավորում սովորել եմ Մտքի Զարկ",
+            " STIMULUS OF THOUGHT ",
+            "հասարակական կազմակերպությունում: Ինձ դուր է գալիս աշխատել նոր մարդկանց հետ: Նոր մարդիկ նոր ծանոթություններ : Այս էջը ստեղծելու համար ես օգտագործել եմ",
+            " TailwindCSS, ",
+            " Next.js, ",
+            " Sass ",
+            "և այլն: Ուրախ եմ ձեզ տեսնել իմ էջում, և վստահ եմ, որ այն ձեզ դուր կգա ստորև դուք կտեսնեք իմ աշխատանքներից։"
+          ]
+        },
+        "table": {
+          "name": {
+            "en": {
+              "key": "Name",
+              "value": "Narek Grigoryan"
+            },
+            "hy": {
+              "key": "Անուն",
+              "value": "Նարեկ Գրիգորյան"
+            }
           },
-          "title": {
-            "hy":"Կենսագրություն",
-            "en":"Biography"
+          "age": {
+            "en": {
+              "key": "Age"
+            },
+            "hy": {
+              "key": "Տարիք"
+            }
           },
-          "paragraph": {
+          "address": {
+            "en": {
+              "key": "Address",
+              "value": "Armenia, Yerevan"
+            },
+            "hy": {
+              "key": "Հասցե",
+              "value": "Հայաստան, Երևան"
+            }
+          },
+          "phone": {
+            "hy": { "key": "Հեռախոսահամար" },
+            "en": { "key": "Phone" }
+          }
+        },
+        "tabs": {
+          "list": {
             "en": [
-              "I'm Front-end Developer. I'm from Yerevan. I code and create web pages. It's my first official portfolio. I studied programming at",
-              " \" STIMULUS OF THOUGHT \" ",
-              "NGO. I like working with new people. New people are new experiences. To create this page I used",
-              " TailwindCSS, ",
-              "Next.js, ",
-              "Sass ",
-              "and etc. I'm glad to see you on my page, and I'm sure you'll like it, below you will see my works. "
+              {
+                "id": 1,
+                "title": "Education",
+                "type": "education"
+              },
+              {
+                "id": 2,
+                "title": "Experience",
+                "type": "experience"
+              },
+              {
+                "id": 3,
+                "title": "Skills",
+                "type": "skill"
+              }
             ],
             "hy": [
-              "Ես Front-end Ծրագրավորող եմ: Ես Երևանից եմ։ Ծրագրավորում եմ և ստեղծում վեբ էջեր։ Սա իմ առաջին պաշտոնական պորտֆոլիոն է: Ծրագրավորում սովորել եմ Մտքի Զարկ",
-              " STIMULUS OF THOUGHT ",
-              "հասարակական կազմակերպությունում: Ինձ դուր է գալիս աշխատել նոր մարդկանց հետ: Նոր մարդիկ նոր ծանոթություններ : Այս էջը ստեղծելու համար ես օգտագործել եմ",
-              " TailwindCSS, ",
-              " Next.js, ",
-              " Sass ",
-              "և այլն: Ուրախ եմ ձեզ տեսնել իմ էջում, և վստահ եմ, որ այն ձեզ դուր կգա ստորև դուք կտեսնեք իմ աշխատանքներից։"
+              {
+                "id": 1,
+                "title": "Կրթություն",
+                "type": "education"
+              },
+              {
+                "id": 2,
+                "title": "Փորձ",
+                "type": "experience"
+              },
+              {
+                "id": 3,
+                "title": "Հմտություններ",
+                "type": "skill"
+              }
             ]
           },
-          "table":{
-            "name":{
-             "en":{
-              "key":"Name",
-              "value":"Narek Grigoryan"
-             },
-             "hy":{
-              "key":"Անուն",
-              "value":"Նարեկ Գրիգորյան"
-             }
-            },
-            "age":{
-              "en":{
-                "key":"Age"
-              },
-              "hy":{
-                "key":"Տարիք"
-              }
-            },
-            "address":{
-              "en":{
-                "key":"Address",
-                "value":"Armenia, Yerevan"
-              },
-              "hy":{
-                "key":"Հասցե",
-                "value":"Հայաստան, Երևան"
-              }
-        
-            },
-            "phone":{
-              "hy":{"key":"Հեռախոսահամար"},
-              "en":{"key":"Phone"}
-        }
-       },
-          "tabs": {
-            "list": {
+          "body": {
+            "skill": {
               "en": [
                 {
                   "id": 1,
-                  "title": "Education",
-                  "type": "education"
+                  "title": "HTML and CSS [SCSS]",
+                  "percent": 95
                 },
                 {
                   "id": 2,
-                  "title": "Experience",
-                  "type": "experience"
-                },{
+                  "title": "Pure JavaScript",
+                  "percent": 70
+                },
+                {
                   "id": 3,
-                  "title": "Skills",
-                  "type": "skill"
+                  "title": "React.js + Next.js",
+                  "percent": 65
                 }
               ],
               "hy": [
                 {
                   "id": 1,
-                  "title": "Կրթություն",
-                  "type": "education"
+                  "title": "HTML և CSS [SCSS]",
+                  "percent": 95
                 },
                 {
                   "id": 2,
-                  "title": "Փորձ",
-                  "type": "experience"
+                  "title": "Մաքուր JavaScript",
+                  "percent": 70
                 },
                 {
                   "id": 3,
-                  "title": "Հմտություններ",
-                  "type": "skill"
+                  "title": "React.js + Next.js",
+                  "percent": 65
                 }
               ]
             },
-            "body": {
-              "skill": {
-                "en": [
-                  {
-                    "id": 1,
-                    "title":"HTML and CSS [SCSS]",
-                    "percent": 95
-                  },     {
-                    "id": 2,
-                    "title":"Pure JavaScript",
-                    "percent": 70
-                  },     {
-                    "id": 3,
-                    "title":"React.js + Next.js",
-                    "percent": 65
-                  }
-                ],
-                "hy": [
-                  {
-                    "id": 1,
-                    "title":"HTML և CSS [SCSS]",
-                    "percent": 95
-                  },
-                  {
-                    "id":2,
-                    "title":"Մաքուր JavaScript",
-                    "percent": 70
-                  },
-                  {
-                    "id": 3,
-                    "title":"React.js + Next.js",
-                    "percent": 65
-                  }
-                ]
-              },
-              "experience": {
-                "en": [
-                  {
-                    "id": 1,
-                    "title": "Webex LLC",
-                    "subtitle": "Trainee",
-                    "date": "(2022 august 1 - 2022 september 1)",
-                    "desc":"while studying at «STIMULUS THOUGHT», with their help, I temporarily got a job at «Webex LLC»  as an intern for a month during the internship, got a little experience in a team"
-                  }
-                ],
-                "hy": [
-                  {
-                    "id": 1,
-                    "title": "Webex ՍՊԸ",
-                    "subtitle": "Պրակտիկանտ",
-                    "date": "(2022թ․ օգոստսի 1-ից - 2022թ-ի սեպտեմբերի 1-ը)",
-                    "desc": "սովորելով «STIMULUS THOUGHT»-ում, իրենց օգնությամբ ժամանակավորապես աշխատանքի ընդունվեցի «Webex ՍՊԸ»-ում որպես պրակտիկանտ՝ պրակտիկան տեվեց մեկ ամիս, որից ես ստացա մի փոքր թիմում աշխատելու փորձ ."
-                  }
-                ]
-              },
-              "education": {
-                "en": [  {
+            "experience": {
+              "en": [
+                {
+                  "id": 1,
+                  "title": "Webex LLC",
+                  "subtitle": "Trainee",
+                  "date": "(2022 august 1 - 2022 september 1)",
+                  "desc": "while studying at «STIMULUS THOUGHT», with their help, I temporarily got a job at «Webex LLC»  as an intern for a month during the internship, got a little experience in a team"
+                }
+              ],
+              "hy": [
+                {
+                  "id": 1,
+                  "title": "Webex ՍՊԸ",
+                  "subtitle": "Պրակտիկանտ",
+                  "date": "(2022թ․ օգոստսի 1-ից - 2022թ-ի սեպտեմբերի 1-ը)",
+                  "desc": "սովորելով «STIMULUS THOUGHT»-ում, իրենց օգնությամբ ժամանակավորապես աշխատանքի ընդունվեցի «Webex ՍՊԸ»-ում որպես պրակտիկանտ՝ պրակտիկան տեվեց մեկ ամիս, որից ես ստացա մի փոքր թիմում աշխատելու փորձ ."
+                }
+              ]
+            },
+            "education": {
+              "en": [
+                {
                   "id": 1,
                   "title": "Sh. Rustaveli №23",
                   "subtitle": "secondary education from 5th grade to 9th grade",
                   "date": "(2011 - 2016)",
                   "desc": "secondary education from 1th grade to 5th grade i received at school V. Zatikyan №90 (2006-2011) "
-                },    {
+                },
+                {
                   "id": 2,
                   "title": "FES House",
                   "subtitle": "Front-end programming",
                   "date": "(2014-2015)",
                   "desc": "during my studies I got knowledge about html, css, js and jquery"
-                },    {
+                },
+                {
                   "id": 3,
                   "title": "T.Shevchenko №42",
                   "subtitle": "High school",
                   "date": "(2017-2020)",
                   "desc": "I joined the army after high school. During the service, I was injured due to the war and was released from service for 3 years"
-                } ,   {
+                },
+                {
                   "id": 4,
                   "title": "«STIMULUS THOUGHT» NGO",
                   "subtitle": "Front-end advanced education ",
                   "date": "(2021 november - 2022 november)",
                   "desc": "I learned js, React.js, jquery, [python basics] and most importantly teamwork"
-                }],
-                "hy": [ {
+                }
+              ],
+              "hy": [
+                {
                   "id": 1,
                   "title": "Շ․Ռուսթավելի №23",
                   "subtitle": "Միջնակարգ կրություն 5-ից մինչև 9-րդ դասարաններ",
                   "date": "(2011 - 2016)",
                   "desc": "Միջնակարգ կրթությունս 1-ից մինչև 5-րդ դասարաններ ստացել եմ Վ․Զատիկյանի №90 դպրոցում"
-                },    {
+                },
+                {
                   "id": 2,
-                  "title":"FES House",
-                  "subtitle":  "Front-end ծրագրավորում",
+                  "title": "FES House",
+                  "subtitle": "Front-end ծրագրավորում",
                   "date": "(2014-2015)",
                   "desc": "ուսման ընթացքում ստացել եմ html, css, js և jquery -ին վերաբերյալ գիտելիքներ"
-                },    {
+                },
+                {
                   "id": 3,
                   "title": "Տ․Շեվչենկո",
                   "subtitle": "Ավագ դպրոց",
                   "date": "(2017-2020)",
                   "desc": "Ավագ դպրոցից հետո  գնացել եմ բանակ,ծառայությանց ընթացքում պատերազմի պատճառով ստացել եմ վնասվածք և ազատվել եմ ծառայությունից 3 տարի ժամկետով"
-                } ,   {
+                },
+                {
                   "id": 4,
                   "title": "«STIMULUS THOUGHT» ՀԿ",
                   "subtitle": "Front-end խորացված կրթություն",
                   "date": "(2021 նոյեմբեր - 2022 նոյեմբեր)",
                   "desc": "Ես ավելի խորացված սովորել եմ js, React.js, jquery, [python-ի հիմունքները] և կարևորը աշխատանք թիմում\n"
-                }]
-              }
+                }
+              ]
             }
           }
-     },
+        }
+      },
       "portfolios": {
         "title": {
           "en": "Portfolio",
@@ -317,28 +307,35 @@
           {
             "id": 1,
             "alt": "Komitas",
-            "title": "Komitas"
+            "title": "Komitas",
+            "demo": "https://komitas.vercel.app/",
+            "code": "https://github.com/17N71/Komitas"
           },
           {
             "id": 2,
             "alt": "Medley",
-            "title":"Medley"
+            "title": "Medley",
+            "src": "/public/portfolios/Medley/Medley.jpg",
+            "demo": "https://17n71.github.io/Medley/",
+            "code": "https://github.com/17N71/Medley"
           },
           {
             "id": 3,
             "alt": "MetaWave",
-            "title": "MetaWave"
+            "title": "MetaWave",
+            "src": "/public/portfolios/MetaWave/MetaWave.png",
+            "demo": "https://github.com/17N71/MetaWave",
+            "code": "https://17n71.github.io/MetaWave/"
           },
           {
             "id": 4,
             "alt": "Elastic",
-            "title": "Elastic"
+            "title": "Elastic",
+            "demo": "https://17n71.github.io/Elastic/",
+            "code": "https://github.com/17N71/Elastic"
           }
         ]
       }
     }
   }
 }
-
-
-

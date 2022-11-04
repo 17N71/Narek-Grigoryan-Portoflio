@@ -8,3 +8,6 @@
 .links {
   @apply flex justify-center items-center mt-5 text-center text-lg flex-col 2xl:flex-row
 }
+.back{
+  @apply fixed top-10 left-10 text-gray-300/50 dark:text-[#906d49]
+}

@@ -1,5 +1,4 @@
 import React, {useCallback, useEffect, useState} from "react";
-import dynamic from "next/dynamic";
 import { useRouter } from "next/router"
 import Zoom from 'react-medium-image-zoom'
 import Head from "next/head";
@@ -42,6 +41,7 @@ import Elastic5 from "/public/portfolios/Elastic/Elastic5.png";
 import Elastic6 from "/public/portfolios/Elastic/Elastic6.png";
 import Elastic7 from "/public/portfolios/Elastic/Elastic7.png";
 import Elastic8 from "/public/portfolios/Elastic/Elastic8.png";
+import {IoMdArrowRoundBack} from "react-icons/io";
 //Elastic Images
 const portfoliosImages = {
   MedelyImages: [medely1, medely2, medely3, medely4, medely5, medely6, medely7],
@@ -75,8 +75,6 @@ const portfoliosImages = {
     Elastic8,
   ],
 };
-
-
 export async function getServerSideProps(context) {
   const res = await fetch(process.env.API_CUSTOM);
   const datas = await res.json();
@@ -147,7 +145,9 @@ function Portfolio({ data,dataLinks }) {
               integrity="sha256-605xvX2UswSdu7L4xHzAh9JTfCaNtTNDEcOFDbNfZIA=" crossOrigin="anonymous" /> 
       </Head>
       <main className={current.main}>
-        <button onClick={() => router.back()}>Back</button>
+        <button onClick={() => router.back()} className={current.back}>
+          <IoMdArrowRoundBack size={40} />
+        </button>
         <CustomLangButton lang={lang} changeLang={changeLang} />
         <div className={current.leftPart}>
           <h2 className={"text-center text-6xl mt-5 mb-5 text-[#cc9f68]"}>{data.title}</h2>

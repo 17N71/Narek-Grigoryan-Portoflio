@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import slidermain from "./portfolios.module.scss";
+import slidermain from "./slidermain.module.scss";
 import {Splide, SplideSlide} from "@splidejs/react-splide";
 import Link from "next/link";
 import Image from "next/image";
@@ -66,7 +66,7 @@ function SliderMain() {
         >
           {allPortfolios.map(({ title, id, alt }) => (
             <SplideSlide key={id}>
-              <Link href={`/${id}`} className={"cursor-ew-resize"}>
+              <Link href={`/portfolio/${id}`} className={"cursor-ew-resize"}>
                 <Image
                   style={{ objectFit: "cover", width: "100%", height: "100%" }}
                   className={"pointer-events-none cursor-ew-resize"}

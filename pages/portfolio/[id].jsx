@@ -5,9 +5,9 @@ import Zoom from 'react-medium-image-zoom'
 import Head from "next/head";
 import current from "./current.module.scss";
 import Image from "next/image";
-import CustomMeta from "../components/CustomMeta";
+import CustomMeta from "../../components/CustomMeta";
 import {Splide, SplideSlide} from "@splidejs/react-splide";
-import CustomLangButton from "../components/CustomLangButton/CustomLangButton";
+import CustomLangButton from "../../components/CustomLangButton/CustomLangButton";
 import medely1 from "/public/portfolios/Medley/Medley1.jpg";
 import medely2 from "/public/portfolios/Medley/Medley2.jpg";
 import medely3 from "/public/portfolios/Medley/Medley3.png";

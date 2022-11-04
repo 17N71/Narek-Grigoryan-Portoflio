@@ -12,7 +12,6 @@ const List = () => {
         <li key={id}>
           <NavLink
             to={to}
-            offset={-50}
             smooth={true}
             className="cursor-pointer  duration-500 hover:text-stone-400 "
           >

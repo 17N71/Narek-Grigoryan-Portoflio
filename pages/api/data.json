@@ -352,6 +352,68 @@
             }
           }
         }
+      },
+      "contact": {
+        "title":{
+          "hy": "Կոնտակտ",
+          "en": "Contact"
+        },
+        "subtitle": {
+          "hy": "Կապնել",
+          "en": "Get In Touch"
+        },
+        "description": {
+          "hy": "Եթե ունեք որևէ առաջարկ, նախագիծ կամ եթե ցանկանում եք «բարևել», խնդրում ենք լրացնել ստորև ներկայացված ձևը և ես շուտով կպատասխանեմ ձեզ:",
+          "en": "If you have any suggestion, project or even you want to say “hello”, please fill out the form below and I will reply you shortly."
+        },
+        "fields": {
+          "name": {
+            "hy": "Անուն",
+            "en": "Name"
+          },
+          "email": {
+            "hy": "Էլ․փոստ",
+            "en": "Email"
+          },
+          "message": {
+            "hy": "Նամակ",
+            "en": "Message"
+          },
+          "submit": {
+            "hy": "Ուղարկել նամակը",
+            "en": "Send message"
+          }
+        },
+        "errors": {
+          "email": {
+            "required": {
+              "hy": "Էլ.փոստը պարտադիր է",
+              "en": "Email is required"
+            },
+            "hy": "Խնդրում ենք գրել ճիշտ էլ.փոստը",
+            "en": "Please write the correct email!"
+          },
+          "name": {
+            "pattern": {
+              "hy": "ԿԽնդրեմ  գրել իրական {ճիշտ} անունը։",
+              "en": "Please write the correct name!"
+            },
+            "required": {
+              "hy": "Անունը չի կարող պակաս լինել 3 խորհրդանիշից:",
+              "en": "Name can't be less than 3 symbols!"
+          },
+            "hy": "Անունը պարտադիր է:",
+            "en": "Name is required!"
+          },
+          "message": {
+            "required": {
+              "hy": "Նամակը պարտադիր է:",
+              "en": "Message is required!"
+            },
+            "hy": "Հաղորդագրությունը չի կարող պակաս լինել 3 խորհրդանիշից:",
+            "en": "Message can't be less than 3 symbols!"
+          }
+        }
       }
     }
   }

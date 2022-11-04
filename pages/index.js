@@ -9,6 +9,7 @@ import left from "../components/LeftSide/left.module.scss";
 import Home from "../components/Home/Home";
 import About from "../components/About/About";
 import SliderMain from "../components/SlideMain/SliderMain";
+import Contact from "../components/Contact/Contact";
 const RightSide = dynamic(() => import("../components/RightSide/RightSide"), {
   suspense: false,
   ssr: false,
@@ -74,6 +75,7 @@ export default function Page({ data }) {
                 <Home data={data.data.left.home} />
                 <About />
                 <SliderMain />
+                <Contact />  
               </div>
           </LeftSide>
           <Media query="(min-width: 1041px)">

@@ -17,10 +17,9 @@ function SliderMain() {
   const {data,lang} = useContext(dataContext)
   const options = {
     type: "loop",
-    perPage: 2,
+    perPage: 1,
     gap: "2rem",
     rewind: true,
-    mediaQuery: "max",
     keyboard: "focused",
     width: "100%",
     autoplay: true,
@@ -35,11 +34,7 @@ function SliderMain() {
       prev: "splide__arrow--prev portfolios-arrow-prev",
       next: "splide__arrow--next portfolios-arrow-next",
     },
-    breakpoints: {
-      768: {
-        perPage: 1,
-      },
-    },
+   
   };
   const allPortfolios = data.data.left.portfolios.allPortfolios.AllPortfolios
   const Portfolios = [portfolio1, portfolio2, portfolio3, portfolio4];

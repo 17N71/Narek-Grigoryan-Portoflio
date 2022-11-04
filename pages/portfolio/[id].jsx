@@ -156,7 +156,7 @@ function Portfolio({ data,dataLinks }) {
           >
             {allImages.map((image,index)=>(
               <SplideSlide key={Math.random()*Math.random()} >
-                <Zoom >
+                <Zoom>
                       <Image 
                             priority
                              title={`${data.title} image ${index}`}

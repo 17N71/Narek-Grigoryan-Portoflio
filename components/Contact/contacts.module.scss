@@ -1,0 +1,58 @@
+.section{
+  @apply w-full flex flex-col gap-5 mt-80;
+}
+.part{
+}
+.NameAndEmail {
+  @apply mt-5 flex md:flex-row gap-7 flex-col  md:gap-2
+}
+.formField{
+  @apply flex flex-col
+}
+
+.label{
+  @apply relative;
+}
+.legend{
+  @apply absolute -top-1 left-[3%] transition-all duration-300 px-2 py-5
+}
+.mess{
+  @apply  w-full h-14 bg-transparent border 
+    resize-none 
+  transition-all duration-300 border-gray-300/60 px-5 py-3 outline-none;
+  &:hover{
+    @apply border-gray-300/90
+  }
+  &:focus{
+    @apply border-[#987747];
+  }
+  &:focus:hover{
+    @apply border-[#987747];
+  }
+}
+  label.label{
+    @apply flex-1 w-full;
+    input{
+      @apply w-full h-14 bg-transparent border
+      transition-all duration-300 border-gray-300/60 px-5 py-2 outline-none ;
+    &:hover{
+        @apply border-gray-300/90;
+      }
+    &:focus{
+      @apply border-[#987747];
+    }
+      &:focus:hover{
+        @apply border-[#987747];
+      }
+    }
+  }
+.focuesField{
+  @apply -top-5 rounded-lg bg-stone-900 px-4 py-1 left-[10px] text-[#987747];
+}
+
+.errors{
+  @apply text-red-600 mb-5 text-lg
+}
+.submitBtn{
+  @apply w-full bg-transparent border-2 font-semibold text-lg tracking-wider border-gray-300/60 mt-4 px-4 py-3 transition-all duration-300 hover:text-[#987747] hover:border-[#987747]
+}

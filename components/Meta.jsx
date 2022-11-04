@@ -4,8 +4,8 @@ const Meta = () => {
   return (
     <>
       <meta name="theme-color" content="dark light" />
-      <meta name="title" content={"Narek Grigoryan's Portfolio"} />
-      <meta name="og:title" content={"Narek Grigoryan's Portfolio"} />
+      <meta name="title" content={"Narek Grigoryan's portfolio"} />
+      <meta name="og:title" content={"Narek Grigoryan's portfolio"} />
       <meta name="revisit-after" content="15 days" />
       <meta name="og:locale" content={"en_US"} />
       <meta name="og:locale:alternate" content={"hy_AM"} />

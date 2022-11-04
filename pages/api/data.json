@@ -303,38 +303,55 @@
           "en": "Works are done",
           "hy": "Կատարած աշխատանքներ"
         },
-        "allPortfolios": [
-          {
-            "id": 1,
-            "alt": "Komitas",
-            "title": "Komitas",
-            "demo": "https://komitas.vercel.app/",
-            "code": "https://github.com/17N71/Komitas"
-          },
-          {
-            "id": 2,
-            "alt": "Medley",
-            "title": "Medley",
-            "src": "/public/portfolios/Medley/Medley.jpg",
-            "demo": "https://17n71.github.io/Medley/",
-            "code": "https://github.com/17N71/Medley"
-          },
-          {
-            "id": 3,
-            "alt": "MetaWave",
-            "title": "MetaWave",
-            "src": "/public/portfolios/MetaWave/MetaWave.png",
-            "demo": "https://github.com/17N71/MetaWave",
-            "code": "https://17n71.github.io/MetaWave/"
-          },
-          {
-            "id": 4,
-            "alt": "Elastic",
-            "title": "Elastic",
-            "demo": "https://17n71.github.io/Elastic/",
-            "code": "https://github.com/17N71/Elastic"
+
+        "allPortfolios": { 
+          "AllPortfolios":[
+            {
+              "id": 1,
+              "alt": "Komitas",
+              "title": "Komitas",
+              "demo": "https://komitas.vercel.app/",
+              "code": "https://github.com/17N71/Komitas"
+            },
+            {
+              "id": 2,
+              "alt": "Medley",
+              "title": "Medley",
+              "src": "/public/portfolios/Medley/Medley.jpg",
+              "demo": "https://17n71.github.io/Medley/",
+              "code": "https://github.com/17N71/Medley"
+            },
+            {
+              "id": 3,
+              "alt": "MetaWave",
+              "title": "MetaWave",
+              "src": "/public/portfolios/MetaWave/MetaWave.png",
+              "demo": "https://github.com/17N71/MetaWave",
+              "code": "https://17n71.github.io/MetaWave/"
+            },
+            {
+              "id": 4,
+              "alt": "Elastic",
+              "title": "Elastic",
+              "demo": "https://17n71.github.io/Elastic/",
+              "code": "https://github.com/17N71/Elastic"
+            }
+          ],
+          "links": {
+            "en": {
+              "code": "You can see code",
+              "demo": "You can see page on server"
+            },
+            "or": {
+              "hy": "Կամ",
+              "en": "Or"
+            },
+            "hy": {
+              "code": "Դուք կարող էք տեսնել կոդը",
+              "demo": "Դուք կարող էք տեսնել կայքը համացանցում"
+            }
           }
-        ]
+        }
       }
     }
   }

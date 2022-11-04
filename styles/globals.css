@@ -28,3 +28,11 @@ body,
 .portfolios-arrow-prev {
   @apply transform rotate-180 fill-[#cbb040] hover:fill-[#baa010];
 }
+.splide__pagination__page{
+  @apply bg-cyan-300
+}
+
+.splide__arrow.portfolio-arrow.splide__arrow--prev.portfolio-arrow-prev svg{
+   transform: rotate(-180deg) !important;
+
+}

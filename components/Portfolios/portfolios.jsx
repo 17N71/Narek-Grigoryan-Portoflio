@@ -8,6 +8,7 @@ import portfolio2 from "/public/portfolios/Medley.jpg";
 import portfolio3 from "/public/portfolios/MetaWave.png";
 import portfolio4 from "/public/portfolios/Elastic.jpg";
 import { dataContext } from "../../pages";
+import Head from "next/head";
 function Portfolios({ allPortfolios }) {
   const [interval, setInterval] = useState(1000);
   setTimeout(() => {
@@ -43,6 +44,10 @@ function Portfolios({ allPortfolios }) {
   };
   return (
     <>
+      <Head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide-core.min.css"
+              integrity="sha256-ZAXImCY06SjVuIrJfWUETkyCctX5aGdL1AVEBX5CxZA=" crossOrigin="anonymous" />
+      </Head>
       <div className={portfolios.portfolios} name={"portfolio"}>
         <h3 className="text-4xl   uppercase text-[#987750] mb-5">
           {data.data.left.portfolios.title[lang]}
@@ -61,7 +66,7 @@ function Portfolios({ allPortfolios }) {
           className={"my-5"}
           aria-label="Portfolio Slider"
         >
-          {allPortfolios.map(({ title, id, alt }) => (
+          {allPortfolios.AllPortfolios.map(({ title, id, alt }) => (
             <SplideSlide key={id}>
               <Link href={`/Portfolio/${id}`} className={" cursor-ew-resize"}>
                 <Image

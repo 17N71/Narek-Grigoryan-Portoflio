@@ -1,9 +1,10 @@
 .main {
-  @apply flex;
+  @apply flex flex-col items-center; 
 }
 .left {
-  @apply flex-[60%]  h-screen;
+    @apply mx-auto
 }
-.right {
-  @apply flex-[40%]  h-screen border-l px-5 pt-2 border-gray-300/70;
+
+.links {
+  @apply flex justify-center items-center mt-5 text-center text-lg flex-col 2xl:flex-row
 }

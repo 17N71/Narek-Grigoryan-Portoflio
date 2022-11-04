@@ -68,7 +68,7 @@ function Portfolios({ allPortfolios }) {
         >
           {allPortfolios.AllPortfolios.map(({ title, id, alt }) => (
             <SplideSlide key={id}>
-              <Link href={`/portfolio/${id}`} className={" cursor-ew-resize"}>
+              <Link href={`/${id}`} className={"cursor-ew-resize"}>
                 <Image
                   style={{ objectFit: "cover", width: "100%", height: "100%" }}
                   className={"pointer-events-none cursor-ew-resize"}

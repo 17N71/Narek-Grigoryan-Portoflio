@@ -1,20 +1,17 @@
 import React, { useContext, useState } from "react";
 import Link from "next/link";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import Head from "next/head";
 import Image from "next/image";
+import { dataContext } from "../../pages";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import portfolios from "./portfolios.module.scss";
 import portfolio1 from "/public/portfolios/Komitas.png";
 import portfolio2 from "/public/portfolios/Medley.jpg";
 import portfolio3 from "/public/portfolios/MetaWave.png";
 import portfolio4 from "/public/portfolios/Elastic.jpg";
-import { dataContext } from "../../pages";
-import Head from "next/head";
-function Portfolios({ allPortfolios }) {
-  const [interval, setInterval] = useState(1000);
-  setTimeout(() => {
-    setInterval(5000);
-  }, 0);
+function Portfolios() {
   const { lang, data } = useContext(dataContext);
+  const allPortfolios = data.data.left.portfolios.allPortfolios.AllPortfolios
   const Portfolios = [portfolio1, portfolio2, portfolio3, portfolio4];
   const options = {
     type: "loop",
@@ -28,7 +25,7 @@ function Portfolios({ allPortfolios }) {
     drag: "free",
     snap: true,
     trimSpace: false,
-    interval: interval,
+    interval: 3500,
     easing: "cubic-bezier(.97,1.41,.39,.93)",
     classes: {
       arrows: "splide__arrows portfolios-arrows",
@@ -66,7 +63,7 @@ function Portfolios({ allPortfolios }) {
           className={"my-5"}
           aria-label="Portfolio Slider"
         >
-          {allPortfolios.AllPortfolios.map(({ title, id, alt }) => (
+          {allPortfolios.map(({ title, id, alt }) => (
             <SplideSlide key={id}>
               <Link href={`/${id}`} className={"cursor-ew-resize"}>
                 <Image

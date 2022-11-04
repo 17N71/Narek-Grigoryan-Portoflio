@@ -8,8 +8,10 @@ import Meta from "./../components/Meta";
 import left from "../components/LeftSide/left.module.scss";
 import Home from "../components/Home/Home";
 import About from "../components/About/About";
-import Portfolios from "../components/Portfolios/Portfolios";
-const RightSide = dynamic(() => import("../components/RightSide/RightSide"), {
+const Portfolios = dynamic(() => import("../components/Portfolios/Portfolios"), {
+  suspense: false,
+  ssr: false,
+});const RightSide = dynamic(() => import("../components/RightSide/RightSide"), {
   suspense: false,
   ssr: false,
 });
@@ -70,7 +72,7 @@ export default function Page({ data }) {
           />
                 <Home data={data.data.left.home} />
                 <About />
-                <Portfolios allPortfolios={data.data.left.portfolios.allPortfolios} />
+                <Portfolios />
               </div>
           </LeftSide>
           <Media query="(min-width: 1041px)">

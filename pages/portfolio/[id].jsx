@@ -142,7 +142,7 @@ function Portfolio({ data,dataLinks }) {
 
     }
 
-  }, [data.title]);
+  }, []);
   let rand = Math.ceil(Math.random() * allImages.length)
   return (
     <>

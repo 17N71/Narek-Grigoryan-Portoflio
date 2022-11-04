@@ -102,8 +102,6 @@ function Portfolio({ data,dataLinks }) {
     width: "100%",
     cover:true,
     autoplay: true,
-    drag: "free",
-    snap: true,
     trimSpace: false,
     easing: "cubic-bezier(.92,1.01,.18,.26)",
     classes: {

@@ -8,7 +8,6 @@ import Image from "next/image";
 import CustomMeta from "../../components/CustomMeta";
 import {Splide, SplideSlide} from "@splidejs/react-splide";
 import CustomLangButton from "../../components/CustomLangButton/CustomLangButton";
-import 'react-medium-image-zoom/dist/styles.css'
 import medely1 from "/public/portfolios/Medley/Medley1.jpg";
 import medely2 from "/public/portfolios/Medley/Medley2.jpg";
 import medely3 from "/public/portfolios/Medley/Medley3.png";
@@ -153,7 +152,7 @@ function Portfolio({ data,dataLinks }) {
       <main className={current.main}>
         <button onClick={() => router.back()}>Back</button>
         <CustomLangButton lang={lang} changeLang={changeLang} />
-        <div className={current.left}>
+        <div className={current.leftPart}>
           <h2 className={"text-center text-6xl mt-5 mb-5 text-[#cc9f68]"}>{data.title}</h2>
           <Splide options={options}
                   tag="section"

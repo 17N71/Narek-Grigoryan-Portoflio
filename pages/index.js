@@ -1,6 +1,14 @@
 import dynamic from "next/dynamic";
 import { useCallback } from "react";
-
+import main from "./main.module.scss";
+import React, { createContext } from "react";
+import Media from "react-media";
+import Head from "next/head";
+import Meta from "./../components/Meta";
+import left from "../components/LeftSide/left.module.scss";
+import Home from "../components/Home/Home";
+import About from "../components/About/About";
+import Portfolios from "../components/Portfolios/Portfolios";
 const RightSide = dynamic(() => import("../components/RightSide/RightSide"), {
   suspense: false,
   ssr: false,
@@ -15,11 +23,6 @@ const TopSide = dynamic(() => import("../components/TopSide/TopSide"), {
   ssr: false,
 });
 
-import main from "./main.module.scss";
-import React, { createContext } from "react";
-import Media from "react-media";
-import Head from "next/head";
-import Meta from "./../components/Meta";
 export const dataContext = createContext(null);
 export default function Page({ data }) {
   const [lang, setLang] = React.useState("en");
@@ -59,7 +62,17 @@ export default function Page({ data }) {
           <Media query="(min-width: 1041px)">
             {(matches) => (matches ? "" : <TopSide />)}
           </Media>
-          <LeftSide />
+          <LeftSide >
+              <div className={left.left} name="home">
+          <span
+            className={`${left.backdrop} ${menu ? left["menuopened"] : ""}`}
+            onClick={closeMenu}
+          />
+                <Home data={data.data.left.home} />
+                <About />
+                <Portfolios allPortfolios={data.data.left.portfolios.allPortfolios} />
+              </div>
+          </LeftSide>
           <Media query="(min-width: 1041px)">
             {(matches) => (matches ? <RightSide /> : "")}
           </Media>

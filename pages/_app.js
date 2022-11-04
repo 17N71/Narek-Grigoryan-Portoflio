@@ -1,5 +1,6 @@
 import "./../styles/style.scss";
 import "../styles/globals.css";
+import 'react-medium-image-zoom/dist/styles.css'
 import React from "react";
 
 function MyApp({ Component, pageProps }) {

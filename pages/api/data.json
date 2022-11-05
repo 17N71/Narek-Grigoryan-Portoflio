@@ -415,6 +415,15 @@
           }
         }
       }
+    },
+    "footer": {
+      "developed": {
+        "hy": "Էջը պատրաստել է Նարեկ Գրիգորյանի դիզայնը ինտերնետից է և փոփոխված է",
+        "en": "Page developed by Narek Grigoryan design from internet and modified"
+      },"rights": {
+        "hy": "Բոլոր իրավունքները պաշտպանված են ©",
+        "en": "All rights reversed ©"
+      }
     }
   }
 }

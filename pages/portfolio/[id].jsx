@@ -5,6 +5,8 @@ import Head from "next/head";
 import current from "./current.module.scss";
 import Image from "next/image";
 import CustomMeta from "../../components/CustomMeta";
+import {AiOutlineArrowUp} from "react-icons/ai";
+import {IoMdArrowRoundBack} from "react-icons/io";
 import {Splide, SplideSlide} from "@splidejs/react-splide";
 import CustomLangButton from "../../components/CustomLangButton/CustomLangButton";
 import medely1 from "/public/portfolios/Medley/Medley1.jpg";
@@ -14,7 +16,6 @@ import medely4 from "/public/portfolios/Medley/Medley4.png";
 import medely5 from "/public/portfolios/Medley/Medley5.png";
 import medely6 from "/public/portfolios/Medley/Medley6.png";
 import medely7 from "/public/portfolios/Medley/Medley7.png";
-
 //Medley Images
 import komitas1 from "/public/portfolios/Komitas/Komitas1.png";
 import komitas2 from "/public/portfolios/Komitas/Komitas2.png";
@@ -41,7 +42,8 @@ import Elastic5 from "/public/portfolios/Elastic/Elastic5.png";
 import Elastic6 from "/public/portfolios/Elastic/Elastic6.png";
 import Elastic7 from "/public/portfolios/Elastic/Elastic7.png";
 import Elastic8 from "/public/portfolios/Elastic/Elastic8.png";
-import {IoMdArrowRoundBack} from "react-icons/io";
+import footer from "../../components/Footer/footer.module.scss";
+import {Link as NavLink} from "react-scroll";
 //Elastic Images
 const portfoliosImages = {
   MedelyImages: [medely1, medely2, medely3, medely4, medely5, medely6, medely7],
@@ -82,10 +84,11 @@ export async function getServerSideProps(context) {
     props: {
       data: datas.data.left.portfolios.allPortfolios.AllPortfolios[context.params.id - 1],
       dataLinks: datas.data.left.portfolios.allPortfolios.links,
+      dataFooter: datas.data.footer
     },
   };
 }
-function Portfolio({ data,dataLinks }) {
+function Portfolio({ data,dataLinks,dataFooter }) {
   const [allImages, setAllImages] = useState([]);
   const [lang, setLang] = useState("en");
   const router =useRouter()
@@ -192,6 +195,10 @@ function Portfolio({ data,dataLinks }) {
         </div>
         
       </main>
+      <footer className={current.footer}>
+        <p className={"text-gray-200/80 text-sm"}>{dataFooter.developed[lang]}</p>
+        <p className={"text-gray-200/80 mt-2  text-sm"}>{dataFooter.rights[lang]}{new Date().getFullYear()}</p>
+      </footer>
     </>
   );
 }

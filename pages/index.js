@@ -10,6 +10,7 @@ import Home from "../components/Home/Home";
 import About from "../components/About/About";
 import SliderMain from "../components/SlideMain/SliderMain";
 import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
 const RightSide = dynamic(() => import("../components/RightSide/RightSide"), {
   suspense: false,
   ssr: false,
@@ -72,11 +73,14 @@ export default function Page({ data }) {
               className={`${left.backdrop} ${menu ? left["menuopened"] : ""}`}
               onClick={closeMenu}
             />
+                  <div className={"px-[4%]"}>
                 <Home data={data.data.left.home} />
                 <About />
                 <SliderMain />
-                <Contact />  
-              </div>
+                <Contact />
+                  </div>
+                <Footer />
+                </div>
           </LeftSide>
           <Media query="(min-width: 1041px)">
             {(matches) => (matches ? <RightSide /> : "")}

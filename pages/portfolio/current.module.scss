@@ -11,3 +11,6 @@
 .back{
   @apply fixed top-10 left-10 text-gray-300/50 dark:text-[#906d49] hover:text-gray-300/70 dark:hover:text-[#cbb040]
 }
+.footer{
+    @apply mt-10  border-t border-[#4a4947] px-[4%] pt-5 relative
+  }

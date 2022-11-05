@@ -12,25 +12,6 @@ function Contact() {
   const [focusMessage,setFocusMessage] = useState(false)
   const emailRegExp =/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/gi;
   const nameRegExp = /^([A-Z])([a-z])+|^([\u0531-\u0556])([\u0561-\u0587])/g;
-  const {data,lang} = useContext(dataContext)
-  const contactData =data.data.left.contact
-  const {
-    register,
-    reset,
-    handleSubmit,
-    formState: { errors, isValid, isDirty },
-  } = useForm({
-    mode: 'all',
-  });
-  
-  const onSubmit = data => {
-    axios({
-      method: 'POST',
-      url: 'https://formbold.com/s/3w7W3',
-      data,
-    });
-    reset();
-  };
   function OnFocus(setFunc,state){
     setFunc(state)
   }
@@ -43,6 +24,16 @@ function Contact() {
 
     }
   }
+  const {data,lang} = useContext(dataContext)
+  const contactData =data.data.left.contact
+  const {    register,    reset,    handleSubmit,    formState: { errors, isValid, isDirty },  } = useForm({    mode: 'all',  });
+  const onSubmit = data1 => {
+    axios({
+      method: 'POST',
+      url: 'https://formbold.com/s/3jGDo',
+      data: data1,
+    }).then(r => reset());
+  };
   return (
   <section className={contacts.section} name={"contact"}>
     <h3 className="text-4xl   uppercase text-[#987750] mb-5">
@@ -76,7 +67,7 @@ function Contact() {
       )}
      </div>
       <form
-        onSubmit={handleSubmit(onSubmit)}
+          onSubmit={handleSubmit(onSubmit)}
         className={contacts.formField}>
       <div className={contacts.NameAndEmail}>
         <label htmlFor={nameId} className={contacts.label}>

@@ -2,6 +2,7 @@ import "./../styles/style.scss";
 import "../styles/globals.css";
 import 'react-medium-image-zoom/dist/styles.css'
 import React from "react";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   const [activeMouse, setActiveMouse] = React.useState(false);
@@ -96,6 +97,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+          <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </Head>
       <span className="main-cursor" ref={mainCursor}>
         <span className="main-cursor-background" />
       </span>

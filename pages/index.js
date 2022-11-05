@@ -19,7 +19,6 @@ const LeftSide = dynamic(() => import("../components/LeftSide/LeftSide"), {
   suspense: false,
   ssr: false,
 });
-
 const TopSide = dynamic(() => import("../components/TopSide/TopSide"), {
   suspense: false,
   ssr: false,
@@ -58,7 +57,7 @@ export default function Page({ data }) {
         <Meta />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide-core.min.css"
               integrity="sha256-ZAXImCY06SjVuIrJfWUETkyCctX5aGdL1AVEBX5CxZA=" crossOrigin="anonymous" />
-
+  
       </Head>
       <dataContext.Provider
         value={{ lang, data, openMenu, closeMenu, changeLang, menu }}

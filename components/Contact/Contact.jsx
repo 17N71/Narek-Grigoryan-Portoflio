@@ -47,7 +47,7 @@ function Contact() {
     >
       Get In Touch
     </h2>
-    <p className={"font-regular text-xl text-gray-200/70"}>{contactData.description[lang]}</p>
+    <p className={"font-regular text-xl text-gray-500/80  dark:text-gray-200/70"}>{contactData.description[lang]}</p>
     <div className={contacts.part}>
      <div className={contacts.errors}>
       {errors.name?.message && (

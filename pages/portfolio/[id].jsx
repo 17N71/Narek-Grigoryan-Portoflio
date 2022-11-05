@@ -196,8 +196,8 @@ function Portfolio({ data,dataLinks,dataFooter }) {
         
       </main>
       <footer className={current.footer}>
-        <p className={"text-gray-200/80 text-sm"}>{dataFooter.developed[lang]}</p>
-        <p className={"text-gray-200/80 mt-2  text-sm"}>{dataFooter.rights[lang]}{new Date().getFullYear()}</p>
+        <p className={"dark:text-gray-200/80 font-semibold text-gray-500/90 text-sm "}>{dataFooter.developed[lang]}</p>
+        <p className={"dark:text-gray-200/80 font-semibold text-gray-500/90 mt-2 text-sm "}>{dataFooter.rights[lang]}{new Date().getFullYear()}</p>
       </footer>
     </>
   );

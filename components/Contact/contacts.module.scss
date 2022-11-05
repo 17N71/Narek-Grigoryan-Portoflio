@@ -1,8 +1,7 @@
 .section{
   @apply w-full flex flex-col gap-5 mt-80;
 }
-.part{
-}
+
 .NameAndEmail {
   @apply mt-5 flex md:flex-row gap-7 flex-col  md:gap-2
 }
@@ -14,14 +13,14 @@
   @apply relative;
 }
 .legend{
-  @apply absolute -top-1 left-[3%] transition-all duration-300 px-2 py-5
+  @apply absolute -top-1 pointer-events-none left-[3%] transition-all duration-300 px-2 py-5
 }
 .mess{
   @apply  w-full h-14 bg-transparent border 
     resize-none 
-  transition-all duration-300 border-gray-300/60 px-5 py-3 outline-none;
+  transition-all duration-300 border-gray-500/60  dark:border-gray-300/60 px-5 py-3 outline-none;
   &:hover{
-    @apply border-gray-300/90
+    @apply dark:border-gray-300/90 border-gray-900;
   }
   &:focus{
     @apply border-[#987747];
@@ -34,9 +33,9 @@
     @apply flex-1 w-full;
     input{
       @apply w-full h-14 bg-transparent border
-      transition-all duration-300 border-gray-300/60 px-5 py-2 outline-none ;
+      transition-all duration-300 border-gray-500/60  dark:border-gray-300/60 px-5 py-2 outline-none ;
     &:hover{
-        @apply border-gray-300/90;
+        @apply dark:border-gray-300/90 border-gray-900;
       }
     &:focus{
       @apply border-[#987747];
@@ -47,12 +46,18 @@
     }
   }
 .focuesField{
-  @apply -top-5 rounded-lg bg-stone-900 px-4 py-1 left-[10px] text-[#987747];
+  @apply -top-5 rounded-lg dark:bg-stone-900 bg-gray-500  px-4 py-1 left-[10px] text-white font-semibold dark:text-[#987747];
 }
 
 .errors{
   @apply text-red-600 mb-5 text-lg
 }
 .submitBtn{
-  @apply w-full bg-transparent border-2 font-semibold text-lg tracking-wider border-gray-300/60 mt-4 px-4 py-3 transition-all duration-300 hover:text-[#987747] hover:border-[#987747]
+  @apply w-full
+  bg-transparent 
+  border-2 font-semibold
+  text-lg tracking-wider 
+  dark:border-gray-300/60 
+  border-gray-500/60 mt-4 px-4 py-3
+  transition-all duration-300 dark:hover:text-[#987747] hover:text-gray-900 hover:border-gray-900  dark:hover:border-[#987747]
 }

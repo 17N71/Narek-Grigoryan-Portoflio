@@ -1,20 +1,21 @@
-import React, {useContext, useState} from 'react';
+import React, { useContext, useState } from "react";
 import slidermain from "./slidermain.module.scss";
-import {Splide, SplideSlide} from "@splidejs/react-splide";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Link from "next/link";
 import Image from "next/image";
-import {dataContext} from "../../pages";
+import { dataContext } from "../../pages";
 import portfolio1 from "../../public/portfolios/Komitas.png";
 import portfolio2 from "../../public/portfolios/Medley.jpg";
 import portfolio3 from "../../public/portfolios/MetaWave.png";
 import portfolio4 from "../../public/portfolios/Elastic.jpg";
+import portfolio5 from "../../public/portfolios/my-blogs.png";
 
 function SliderMain() {
-  const [interval,setInterval] = useState(1000)
-  setTimeout(()=>{
-    setInterval(5000)
-  },0)
-  const {data,lang} = useContext(dataContext)
+  const [interval, setInterval] = useState(1000);
+  setTimeout(() => {
+    setInterval(5000);
+  }, 0);
+  const { data, lang } = useContext(dataContext);
   const options = {
     type: "loop",
     perPage: 1,
@@ -34,10 +35,15 @@ function SliderMain() {
       prev: "splide__arrow--prev portfolios-arrow-prev",
       next: "splide__arrow--next portfolios-arrow-next",
     },
-   
   };
-  const allPortfolios = data.data.left.portfolios.allPortfolios.AllPortfolios
-  const Portfolios = [portfolio1, portfolio2, portfolio3, portfolio4];
+  const allPortfolios = data.data.left.portfolios.allPortfolios.AllPortfolios;
+  const Portfolios = [
+    portfolio1,
+    portfolio2,
+    portfolio3,
+    portfolio4,
+    portfolio5,
+  ];
 
   return (
     <>

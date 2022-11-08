@@ -1,13 +1,13 @@
-import React, {useCallback, useEffect, useState} from "react";
-import { useRouter } from "next/router"
-import Zoom from 'react-medium-image-zoom'
+import React, { useCallback, useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import Zoom from "react-medium-image-zoom";
 import Head from "next/head";
 import current from "./current.module.scss";
 import Image from "next/image";
 import CustomMeta from "../../components/CustomMeta";
-import {AiOutlineArrowUp} from "react-icons/ai";
-import {IoMdArrowRoundBack} from "react-icons/io";
-import {Splide, SplideSlide} from "@splidejs/react-splide";
+import { AiOutlineArrowUp } from "react-icons/ai";
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import CustomLangButton from "../../components/CustomLangButton/CustomLangButton";
 import medely1 from "/public/portfolios/Medley/Medley1.jpg";
 import medely2 from "/public/portfolios/Medley/Medley2.jpg";
@@ -42,8 +42,16 @@ import Elastic5 from "/public/portfolios/Elastic/Elastic5.png";
 import Elastic6 from "/public/portfolios/Elastic/Elastic6.png";
 import Elastic7 from "/public/portfolios/Elastic/Elastic7.png";
 import Elastic8 from "/public/portfolios/Elastic/Elastic8.png";
+
+import myblog1 from "/public/portfolios/MyBlogs/1.png";
+import myblog2 from "/public/portfolios/MyBlogs/2.png";
+import myblog3 from "/public/portfolios/MyBlogs/3.png";
+import myblog4 from "/public/portfolios/MyBlogs/4.png";
+import myblog5 from "/public/portfolios/MyBlogs/5.png";
+import myblog6 from "/public/portfolios/MyBlogs/6.png";
+
 import footer from "../../components/Footer/footer.module.scss";
-import {Link as NavLink} from "react-scroll";
+import { Link as NavLink } from "react-scroll";
 //Elastic Images
 const portfoliosImages = {
   MedelyImages: [medely1, medely2, medely3, medely4, medely5, medely6, medely7],
@@ -76,22 +84,25 @@ const portfoliosImages = {
     Elastic7,
     Elastic8,
   ],
+  MyBlogs: [myblog1, myblog2, myblog3, myblog4, myblog5, myblog6],
 };
 export async function getServerSideProps(context) {
   const res = await fetch(process.env.API_CUSTOM);
   const datas = await res.json();
   return {
     props: {
-      data: datas.data.left.portfolios.allPortfolios.AllPortfolios[context.params.id - 1],
+      data: datas.data.left.portfolios.allPortfolios.AllPortfolios[
+        context.params.id - 1
+      ],
       dataLinks: datas.data.left.portfolios.allPortfolios.links,
-      dataFooter: datas.data.footer
+      dataFooter: datas.data.footer,
     },
   };
 }
-function Portfolio({ data,dataLinks,dataFooter }) {
+function Portfolio({ data, dataLinks, dataFooter }) {
   const [allImages, setAllImages] = useState([]);
   const [lang, setLang] = useState("en");
-  const router =useRouter()
+  const router = useRouter();
   const changeLang = useCallback(() => {
     setLang(lang === "en" ? "hy" : "en");
   }, [lang]);
@@ -103,7 +114,7 @@ function Portfolio({ data,dataLinks,dataFooter }) {
     mediaQuery: "max",
     keyboard: "global",
     width: "100%",
-    cover:true,
+    cover: true,
     autoplay: true,
     trimSpace: false,
     easing: "cubic-bezier(.92,1.01,.18,.26)",
@@ -113,37 +124,41 @@ function Portfolio({ data,dataLinks,dataFooter }) {
       prev: "splide__arrow--prev portfolio-arrow-prev",
       next: "splide__arrow--next portfolio-arrow-next",
     },
-    breakpoints:{
-      768:{
+    breakpoints: {
+      768: {
         perPage: 1,
-      }
-    }
+      },
+    },
   };
-  useEffect(() =>   {
+  useEffect(() => {
     if (data.title === "Medley") {
       setAllImages(portfoliosImages.MedelyImages);
     }
     if (data.title === "Komitas") {
       setAllImages(portfoliosImages.KomitaseImages);
-
     }
     if (data.title === "MetaWave") {
       setAllImages(portfoliosImages.MetaWaveImages);
-
     }
     if (data.title === "Elastic") {
       setAllImages(portfoliosImages.ElasticImages);
     }
+    if (data.title === "My blog") {
+      setAllImages(portfoliosImages.MyBlogs);
+    }
   }, [data.title]);
-  let rand = Math.ceil(Math.random() * allImages.length)
+  let rand = Math.ceil(Math.random() * allImages.length);
   return (
     <>
       <Head>
         <title>Portfolio {data.title}</title>
         <CustomMeta image={allImages[0]} title={data.title} id={data.id} />
-        <link rel="stylesheet"
-              href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/themes/splide-sea-green.min.css"
-              integrity="sha256-605xvX2UswSdu7L4xHzAh9JTfCaNtTNDEcOFDbNfZIA=" crossOrigin="anonymous" /> 
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/themes/splide-sea-green.min.css"
+          integrity="sha256-605xvX2UswSdu7L4xHzAh9JTfCaNtTNDEcOFDbNfZIA="
+          crossOrigin="anonymous"
+        />
       </Head>
       <main className={current.main}>
         <button onClick={() => router.back()} className={current.back}>
@@ -151,53 +166,72 @@ function Portfolio({ data,dataLinks,dataFooter }) {
         </button>
         <CustomLangButton lang={lang} changeLang={changeLang} />
         <div className={current.leftPart}>
-          <h2 className={"text-center text-6xl mt-5 mb-5 text-[#cc9f68]"}>{data.title}</h2>
-          <Splide options={options}
-                  tag="section"
-                  className={"my-5"}
-                  aria-label={`Portfolio Slider ${data.title}`}
+          <h2 className={"text-center text-6xl mt-5 mb-5 text-[#cc9f68]"}>
+            {data.title}
+          </h2>
+          <Splide
+            options={options}
+            tag="section"
+            className={"my-5"}
+            aria-label={`Portfolio Slider ${data.title}`}
           >
-            {allImages.map((image,index)=>(
-              <SplideSlide key={Math.random()*Math.random()} >
+            {allImages.map((image, index) => (
+              <SplideSlide key={Math.random() * Math.random()}>
                 <Zoom>
-                      <Image 
-                            priority
-                             title={`${data.title} image ${index}`}
-                             src={image}
-                             height={600}
-                             width={900}
-                             style={{objectPosition:"center"}}
-                             alt={`${data.title} image ${index}`} />
-                  </Zoom>
-                
+                  <Image
+                    priority
+                    title={`${data.title} image ${index}`}
+                    src={image}
+                    height={600}
+                    width={900}
+                    style={{ objectPosition: "center" }}
+                    alt={`${data.title} image ${index}`}
+                  />
+                </Zoom>
               </SplideSlide>
             ))}
-          </Splide> 
+          </Splide>
           <div className={current.links}>
             <a
               rel="noreferrer noopener noindex"
               target="_blank"
               href={data.code}
-              className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-                <span
-                  className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-stone-900 rounded-md group-hover:bg-opacity-0">{dataLinks[lang].code}</span></a>
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
+            >
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-stone-900 rounded-md group-hover:bg-opacity-0">
+                {dataLinks[lang].code}
+              </span>
+            </a>
             {dataLinks.or[lang]}  
             <a
               rel="noreferrer noopener noindex"
               target="_blank"
               href={data.demo}
-              className="relative text-semibold  inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
-                  <span
-                    className=" text-semibold relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-stone-900 rounded-md group-hover:bg-opacity-0">{dataLinks[lang].demo} </span>
-
+              className="relative text-semibold  inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
+            >
+              <span className=" text-semibold relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-stone-900 rounded-md group-hover:bg-opacity-0">
+                {dataLinks[lang].demo}{" "}
+              </span>
             </a>
+          </div>
         </div>
-        </div>
-        
       </main>
       <footer className={current.footer}>
-        <p className={"dark:text-gray-200/80 font-semibold text-gray-500/90 text-sm "}>{dataFooter.developed[lang]}</p>
-        <p className={"dark:text-gray-200/80 font-semibold text-gray-500/90 mt-2 text-sm "}>{dataFooter.rights[lang]}{new Date().getFullYear()}</p>
+        <p
+          className={
+            "dark:text-gray-200/80 font-semibold text-gray-500/90 text-sm "
+          }
+        >
+          {dataFooter.developed[lang]}
+        </p>
+        <p
+          className={
+            "dark:text-gray-200/80 font-semibold text-gray-500/90 mt-2 text-sm "
+          }
+        >
+          {dataFooter.rights[lang]}
+          {new Date().getFullYear()}
+        </p>
       </footer>
     </>
   );

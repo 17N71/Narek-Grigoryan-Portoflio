@@ -304,8 +304,8 @@
           "hy": "Կատարած աշխատանքներ"
         },
 
-        "allPortfolios": { 
-          "AllPortfolios":[
+        "allPortfolios": {
+          "AllPortfolios": [
             {
               "id": 1,
               "alt": "Komitas",
@@ -335,6 +335,13 @@
               "title": "Elastic",
               "demo": "https://17n71.github.io/Elastic/",
               "code": "https://github.com/17N71/Elastic"
+            },
+            {
+              "id": 5,
+              "alt": "My blog",
+              "title": "My blog",
+              "demo": "https://my-test-blog-41pb.vercel.app/",
+              "code": "https://github.com/17N71/my-test-blog"
             }
           ],
           "links": {
@@ -354,7 +361,7 @@
         }
       },
       "contact": {
-        "title":{
+        "title": {
           "hy": "Կոնտակտ",
           "en": "Contact"
         },
@@ -401,7 +408,7 @@
             "required": {
               "hy": "Անունը չի կարող պակաս լինել 3 խորհրդանիշից:",
               "en": "Name can't be less than 3 symbols!"
-          },
+            },
             "hy": "Անունը պարտադիր է:",
             "en": "Name is required!"
           },
@@ -420,7 +427,8 @@
       "developed": {
         "hy": "Էջը պատրաստել է Նարեկ Գրիգորյանի դիզայնը ինտերնետից է և փոփոխված է",
         "en": "Page developed by Narek Grigoryan design from internet and modified"
-      },"rights": {
+      },
+      "rights": {
         "hy": "Բոլոր իրավունքները պաշտպանված են ©",
         "en": "All rights reversed ©"
       }
